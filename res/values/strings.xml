@@ -10,10 +10,43 @@
 	<string name="play">Play</string>
 	<string name="get_started">Get Started</string>
 	<string name="content_description">Description</string>
+	<string name="choose">Choose a category</string>
+	<string name="choose_level">Choose a level</string>
     <string-array name="tutorial_texts">
         <item>Lorem ipsum</item>
         <item>Lorem ipsum</item>
         <item>Lorem ipsum</item>
         <item>Lorem ipsum</item>
+    </string-array>
+    
+    <string-array name="titles_categories">
+        <item>Water</item>
+        <item>Manmade</item>
+        <item>Landforms</item>
+        <item>Cities</item>
+        <item>Nighttime</item>
+        <item>Weather</item>
+    </string-array>
+    <string-array name="descriptions_categories">
+        <item>72%% of the Earth is Covered by water and more than 95%% of that water can be found in our oceans and about 2%% is frozen in glaciers and ice caps.</item>
+        <item>ManMade features original how-to content, videos, and design inspiration created by both women and men.</item>
+        <item>As a element of the topography, and part of the terrain of our planet, landforms are sculpted by deposition of sediment and molded by erosion and other natural forces into beautiful artwork seen from space.</item>
+        <item>Cities generally have complex systems for sanitation, utilities, land usage, housing, and transportation. The concentration of development greatly facilitates</item>
+    	<item>Occurring in or appropriate for use during the night: nighttime activities; nighttime attire. nighttime (ˈnaɪtˌtaɪm) n. the time between evening and morning.</item>
+    	<item>The Weather Channel and weather.com provide a national and local weather forecast for cities, as well as weather radar, report and hurricane coverage</item>
+    </string-array>
+    <array name="images_categories">
+        <item>@drawable/water</item>
+        <item>@drawable/earth</item>
+        <item>@drawable/landforms</item>
+        <item>@drawable/earth</item>
+        <item>@drawable/earth</item>
+        <item>@drawable/earth</item>
+    </array>
+    <string-array name="level_options">
+        <item>Easy</item>
+        <item>Medium</item>
+        <item>Hard</item>
+        <item>Expert</item>
     </string-array>
 </resources>

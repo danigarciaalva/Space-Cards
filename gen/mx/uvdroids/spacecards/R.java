@@ -9,6 +9,10 @@ package mx.uvdroids.spacecards;
 
 public final class R {
     public static final class array {
+        public static final int descriptions_categories=0x7f0c0002;
+        public static final int images_categories=0x7f0c0003;
+        public static final int level_options=0x7f0c0004;
+        public static final int titles_categories=0x7f0c0001;
         public static final int tutorial_texts=0x7f0c0000;
     }
     public static final class attr {
@@ -351,32 +355,39 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int default_title_indicator_top_padding=0x7f09000c;
     }
     public static final class drawable {
-        public static final int ic_launcher=0x7f020000;
-        public static final int vpi__tab_indicator=0x7f020001;
-        public static final int vpi__tab_selected_focused_holo=0x7f020002;
-        public static final int vpi__tab_selected_holo=0x7f020003;
-        public static final int vpi__tab_selected_pressed_holo=0x7f020004;
-        public static final int vpi__tab_unselected_focused_holo=0x7f020005;
-        public static final int vpi__tab_unselected_holo=0x7f020006;
-        public static final int vpi__tab_unselected_pressed_holo=0x7f020007;
+        public static final int earth=0x7f020000;
+        public static final int ic_launcher=0x7f020001;
+        public static final int landforms=0x7f020002;
+        public static final int vpi__tab_indicator=0x7f020003;
+        public static final int vpi__tab_selected_focused_holo=0x7f020004;
+        public static final int vpi__tab_selected_holo=0x7f020005;
+        public static final int vpi__tab_selected_pressed_holo=0x7f020006;
+        public static final int vpi__tab_unselected_focused_holo=0x7f020007;
+        public static final int vpi__tab_unselected_holo=0x7f020008;
+        public static final int vpi__tab_unselected_pressed_holo=0x7f020009;
+        public static final int water=0x7f02000a;
     }
     public static final class id {
-        public static final int achievements=0x7f050006;
-        public static final int action_settings=0x7f05000f;
+        public static final int achievements=0x7f050007;
+        public static final int action_settings=0x7f050013;
         public static final int bottom=0x7f050003;
-        public static final int indicator=0x7f05000c;
-        public static final int leaderboard=0x7f050007;
-        public static final int logo=0x7f05000a;
+        public static final int categories_list=0x7f050005;
+        public static final int description_category=0x7f050012;
+        public static final int image_category=0x7f050010;
+        public static final int indicator=0x7f05000d;
+        public static final int leaderboard=0x7f050008;
+        public static final int logo=0x7f05000b;
         public static final int none=0x7f050000;
-        public static final int play=0x7f050008;
-        public static final int settings=0x7f050005;
-        public static final int start_button=0x7f05000b;
+        public static final int play=0x7f050009;
+        public static final int settings=0x7f050006;
+        public static final int start_button=0x7f05000c;
+        public static final int title_category=0x7f050011;
         public static final int top=0x7f050004;
         public static final int triangle=0x7f050001;
-        public static final int tutorial_desc=0x7f05000e;
-        public static final int tutorial_video=0x7f050009;
+        public static final int tutorial_desc=0x7f05000f;
+        public static final int tutorial_video=0x7f05000a;
         public static final int underline=0x7f050002;
-        public static final int viewPager=0x7f05000d;
+        public static final int viewPager=0x7f05000e;
     }
     public static final class integer {
         public static final int default_circle_indicator_orientation=0x7f080000;
@@ -386,10 +397,14 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int default_underline_indicator_fade_length=0x7f080004;
     }
     public static final class layout {
-        public static final int activity_main=0x7f030000;
-        public static final int activity_splash=0x7f030001;
-        public static final int activity_walktrought=0x7f030002;
-        public static final int fragment_tutorial=0x7f030003;
+        public static final int activity_achievements=0x7f030000;
+        public static final int activity_category=0x7f030001;
+        public static final int activity_leaderboard=0x7f030002;
+        public static final int activity_main=0x7f030003;
+        public static final int activity_splash=0x7f030004;
+        public static final int activity_walktrought=0x7f030005;
+        public static final int fragment_tutorial=0x7f030006;
+        public static final int item_category=0x7f030007;
     }
     public static final class menu {
         public static final int main=0x7f0d0000;
@@ -401,6 +416,8 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int achievements=0x7f0b0005;
         public static final int action_settings=0x7f0b0001;
         public static final int app_name=0x7f0b0000;
+        public static final int choose=0x7f0b0009;
+        public static final int choose_level=0x7f0b000a;
         public static final int content_description=0x7f0b0008;
         public static final int get_started=0x7f0b0007;
         public static final int hello_world=0x7f0b0002;
