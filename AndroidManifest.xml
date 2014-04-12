@@ -29,6 +29,7 @@
         <activity android:name="mx.uvdroids.spacecards.ChooseCategory"></activity>
         <activity android:name="mx.uvdroids.spacecards.Leaderboard"></activity>
         <activity android:name="mx.uvdroids.spacecards.Achievements"></activity>
+        <activity android:name="mx.uvdroids.spacecards.PlayActivity"></activity>
     </application>
 
 </manifest>

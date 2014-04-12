@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+     <com.viewpagerindicator.CirclePageIndicator
+        android:id="@+id/indicatorQuestions"
+        android:background="#000000"
+        android:layout_alignParentTop="true"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:padding="5dp"
+        app:selectedColor="#FFCC0000"
+        app:fadeDelay="1000"
+        app:fadeLength="1000"
+        />
+     <android.support.v4.view.ViewPager
+        android:id="@+id/viewPagerQuestions"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/indicatorQuestions">
+    </android.support.v4.view.ViewPager>
+</RelativeLayout>

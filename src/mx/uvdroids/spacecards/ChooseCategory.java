@@ -7,8 +7,10 @@ import mx.uvdroids.spacecards.model.Category;
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.app.AlertDialog;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.DialogInterface.OnClickListener;
+import android.content.Intent;
 import android.content.res.TypedArray;
 import android.os.Bundle;
 import android.view.View;
@@ -17,9 +19,16 @@ import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ListView;
 
 public class ChooseCategory extends Activity implements OnItemClickListener{
-
+	public static final String LEVEL = "level";
+	public static final int LEVEL_EASY = 0;
+	public static final int LEVEL_MEDIUM = 1;
+	public static final int LEVEL_HARD = 2;
+	public static final int LEVEL_EXPERT = 3;
+	
 	private ListView categories_list;
 	private ArrayList<Category> categories;
+	private Context context = this;
+	
 	@SuppressLint("Recycle")
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -55,6 +64,10 @@ public class ChooseCategory extends Activity implements OnItemClickListener{
 			@Override
 			public void onClick(DialogInterface dialog, int which) {
 				level = which;
+				Intent i = new Intent(context, PlayActivity.class);
+				i.putExtra(LEVEL, level);
+				startActivity(i);
+				finish();
 			}
 		});
 		builder.show();
