@@ -361,16 +361,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int vpi__tab_unselected_pressed_holo=0x7f020007;
     }
     public static final class id {
-        public static final int action_settings=0x7f040009;
+        public static final int action_settings=0x7f04000a;
         public static final int bottom=0x7f040003;
         public static final int indicator=0x7f040007;
         public static final int logo=0x7f040005;
         public static final int none=0x7f040000;
+        public static final int start_button=0x7f040006;
         public static final int top=0x7f040004;
         public static final int triangle=0x7f040001;
-        public static final int tutorial_desc=0x7f040008;
+        public static final int tutorial_desc=0x7f040009;
         public static final int underline=0x7f040002;
-        public static final int viewPager=0x7f040006;
+        public static final int viewPager=0x7f040008;
     }
     public static final class integer {
         public static final int default_circle_indicator_orientation=0x7f070000;
