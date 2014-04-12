@@ -47,7 +47,7 @@ public class WalkthroughActivity extends Activity {
 		getActionBar().hide();
 		getWindow().setFormat(PixelFormat.TRANSLUCENT);
 		video = (VideoView)findViewById(R.id.tutorial_video);
-		Uri videoUrl = Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.space2);
+		Uri videoUrl = Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.video);
 		video.setVideoURI(videoUrl);
 		video.setOnCompletionListener(new OnCompletionListener() {
 			
@@ -78,13 +78,13 @@ public class WalkthroughActivity extends Activity {
 		super.onStart();
 		handler.removeCallbacks(increment);
         handler.postDelayed(increment, 4000);
-        //video.start();
+        video.start();
 	}
 	
 	@Override
 	protected void onStop() {
 		super.onStop();
 		handler.removeCallbacks(increment);
-		//video.stopPlayback();
+		video.stopPlayback();
 	}
 }

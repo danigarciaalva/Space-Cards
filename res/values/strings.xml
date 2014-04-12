@@ -12,6 +12,7 @@
 	<string name="content_description">Description</string>
 	<string name="choose">Choose a category</string>
 	<string name="choose_level">Choose a level</string>
+	<string name="loading_questions">Loading questions</string>
     <string-array name="tutorial_texts">
         <item>Lorem ipsum</item>
         <item>Lorem ipsum</item>
@@ -33,20 +34,26 @@
         <item>As a element of the topography, and part of the terrain of our planet, landforms are sculpted by deposition of sediment and molded by erosion and other natural forces into beautiful artwork seen from space.</item>
         <item>Cities generally have complex systems for sanitation, utilities, land usage, housing, and transportation. The concentration of development greatly facilitates</item>
     	<item>Occurring in or appropriate for use during the night: nighttime activities; nighttime attire. nighttime (ˈnaɪtˌtaɪm) n. the time between evening and morning.</item>
-    	<item>The Weather Channel and weather.com provide a national and local weather forecast for cities, as well as weather radar, report and hurricane coverage</item>
+    	<item>Most weather phenomena take place in the troposphere, which is the lowest layer of the atmosphere. The troposphere contains 80%% of the atmosphere\'s mass and 99%% of its water vapor and aerosols.</item>
     </string-array>
     <array name="images_categories">
         <item>@drawable/water</item>
-        <item>@drawable/earth</item>
+        <item>@drawable/manmade</item>
         <item>@drawable/landforms</item>
         <item>@drawable/cities2</item>
-        <item>@drawable/earth</item>
-        <item>@drawable/earth</item>
+        <item>@drawable/nighttime</item>
+        <item>@drawable/weather</item>
     </array>
     <string-array name="level_options">
         <item>Easy</item>
         <item>Medium</item>
         <item>Hard</item>
         <item>Expert</item>
+    </string-array>
+    <string-array name="dummy_answers">
+        <item>a) Answer one</item>
+        <item>b) Answer dos</item>
+        <item>c) Answer three</item>
+        <item>d) Answer four</item>
     </string-array>
 </resources>

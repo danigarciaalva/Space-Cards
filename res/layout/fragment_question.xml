@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <TextView 
+        android:layout_margin="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:background="@drawable/card"
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:layout_height="wrap_content"
+        android:text="Here goes the question"
+        android:gravity="center"
+        android:id="@+id/question"/>
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/card"
+        android:orientation="vertical">
+        <ImageView 
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+	        android:layout_width="match_parent"
+	        android:layout_height="180dp"
+	        android:scaleType="centerCrop"
+	        android:adjustViewBounds="false"
+	        android:src="@drawable/earth"
+	        android:id="@+id/image_question"
+	        android:contentDescription="@string/content_description"/>
+    </LinearLayout>
+	<ListView 
+	    android:background="@drawable/card"
+	    android:divider="@android:color/transparent"
+	    android:dividerHeight="5.0sp"
+	    android:layout_margin="10dp"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:id="@+id/options_question"
+	    android:entries="@array/dummy_answers"></ListView>
+</LinearLayout>

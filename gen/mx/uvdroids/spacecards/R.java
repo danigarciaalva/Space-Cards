@@ -10,6 +10,7 @@ package mx.uvdroids.spacecards;
 public final class R {
     public static final class array {
         public static final int descriptions_categories=0x7f0c0002;
+        public static final int dummy_answers=0x7f0c0005;
         public static final int images_categories=0x7f0c0003;
         public static final int level_options=0x7f0c0004;
         public static final int titles_categories=0x7f0c0001;
@@ -356,40 +357,50 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
     }
     public static final class drawable {
         public static final int background=0x7f020000;
-        public static final int cities=0x7f020001;
-        public static final int cities2=0x7f020002;
-        public static final int earth=0x7f020003;
-        public static final int ic_launcher=0x7f020004;
-        public static final int landforms=0x7f020005;
-        public static final int vpi__tab_indicator=0x7f020006;
-        public static final int vpi__tab_selected_focused_holo=0x7f020007;
-        public static final int vpi__tab_selected_holo=0x7f020008;
-        public static final int vpi__tab_selected_pressed_holo=0x7f020009;
-        public static final int vpi__tab_unselected_focused_holo=0x7f02000a;
-        public static final int vpi__tab_unselected_holo=0x7f02000b;
-        public static final int vpi__tab_unselected_pressed_holo=0x7f02000c;
-        public static final int water=0x7f02000d;
+        public static final int card=0x7f020001;
+        public static final int cities=0x7f020002;
+        public static final int cities2=0x7f020003;
+        public static final int earth=0x7f020004;
+        public static final int ic_launcher=0x7f020005;
+        public static final int landforms=0x7f020006;
+        public static final int manmade=0x7f020007;
+        public static final int nighttime=0x7f020008;
+        public static final int nighttime2=0x7f020009;
+        public static final int space1=0x7f02000a;
+        public static final int space2=0x7f02000b;
+        public static final int vpi__tab_indicator=0x7f02000c;
+        public static final int vpi__tab_selected_focused_holo=0x7f02000d;
+        public static final int vpi__tab_selected_holo=0x7f02000e;
+        public static final int vpi__tab_selected_pressed_holo=0x7f02000f;
+        public static final int vpi__tab_unselected_focused_holo=0x7f020010;
+        public static final int vpi__tab_unselected_holo=0x7f020011;
+        public static final int vpi__tab_unselected_pressed_holo=0x7f020012;
+        public static final int water=0x7f020013;
+        public static final int weather=0x7f020014;
     }
     public static final class id {
         public static final int achievements=0x7f050008;
-        public static final int action_settings=0x7f050016;
+        public static final int action_settings=0x7f050019;
         public static final int bottom=0x7f050003;
         public static final int categories_list=0x7f050006;
         public static final int choose_category=0x7f050005;
-        public static final int description_category=0x7f050015;
-        public static final int image_category=0x7f050013;
+        public static final int description_category=0x7f050018;
+        public static final int image_category=0x7f050016;
+        public static final int image_question=0x7f050013;
         public static final int indicator=0x7f050010;
         public static final int indicatorQuestions=0x7f05000b;
         public static final int leaderboard=0x7f050009;
         public static final int logo=0x7f05000e;
         public static final int none=0x7f050000;
+        public static final int options_question=0x7f050014;
         public static final int play=0x7f05000a;
+        public static final int question=0x7f050012;
         public static final int settings=0x7f050007;
         public static final int start_button=0x7f05000f;
-        public static final int title_category=0x7f050014;
+        public static final int title_category=0x7f050017;
         public static final int top=0x7f050004;
         public static final int triangle=0x7f050001;
-        public static final int tutorial_desc=0x7f050012;
+        public static final int tutorial_desc=0x7f050015;
         public static final int tutorial_video=0x7f05000d;
         public static final int underline=0x7f050002;
         public static final int viewPager=0x7f050011;
@@ -410,14 +421,16 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int activity_play=0x7f030004;
         public static final int activity_splash=0x7f030005;
         public static final int activity_walktrought=0x7f030006;
-        public static final int fragment_tutorial=0x7f030007;
-        public static final int item_category=0x7f030008;
+        public static final int fragment_question=0x7f030007;
+        public static final int fragment_tutorial=0x7f030008;
+        public static final int item_category=0x7f030009;
     }
     public static final class menu {
         public static final int main=0x7f0d0000;
     }
     public static final class raw {
         public static final int space2=0x7f040000;
+        public static final int video=0x7f040001;
     }
     public static final class string {
         public static final int achievements=0x7f0b0005;
@@ -429,6 +442,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int get_started=0x7f0b0007;
         public static final int hello_world=0x7f0b0002;
         public static final int leaderboard=0x7f0b0004;
+        public static final int loading_questions=0x7f0b000b;
         public static final int play=0x7f0b0006;
         public static final int settings=0x7f0b0003;
     }
