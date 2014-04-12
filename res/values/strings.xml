@@ -5,4 +5,10 @@
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
 
+    <string-array name="tutorial_texts">
+        <item>Lorem ipsum</item>
+        <item>Lorem ipsum</item>
+        <item>Lorem ipsum</item>
+        <item>Lorem ipsum</item>
+    </string-array>
 </resources>
