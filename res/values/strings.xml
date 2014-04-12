@@ -4,7 +4,12 @@
     <string name="app_name">Space Cards</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
-
+	<string name="settings">Settings</string>
+	<string name="leaderboard">Leaderboard</string>
+	<string name="achievements">Achievements</string>
+	<string name="play">Play</string>
+	<string name="get_started">Get Started</string>
+	<string name="content_description">Description</string>
     <string-array name="tutorial_texts">
         <item>Lorem ipsum</item>
         <item>Lorem ipsum</item>

@@ -16,6 +16,7 @@
         android:layout_marginRight="50dp"
         android:layout_marginTop="10dp"
         android:scaleType="fitCenter"
+        android:contentDescription="@string/content_description"
         android:id="@+id/logo"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"/>
@@ -25,7 +26,7 @@
          android:padding="10dp"
          android:gravity="center"
          android:id="@+id/start_button"
-         android:text="Get started"
+         android:text="@string/get_started"
          android:layout_alignParentBottom="true"/>
      <com.viewpagerindicator.CirclePageIndicator
         android:id="@+id/indicator"

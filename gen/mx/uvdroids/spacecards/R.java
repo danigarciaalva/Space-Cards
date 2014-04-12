@@ -398,9 +398,15 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int space2=0x7f040000;
     }
     public static final class string {
+        public static final int achievements=0x7f0b0005;
         public static final int action_settings=0x7f0b0001;
         public static final int app_name=0x7f0b0000;
+        public static final int content_description=0x7f0b0008;
+        public static final int get_started=0x7f0b0007;
         public static final int hello_world=0x7f0b0002;
+        public static final int leaderboard=0x7f0b0004;
+        public static final int play=0x7f0b0006;
+        public static final int settings=0x7f0b0003;
     }
     public static final class style {
         /** 
