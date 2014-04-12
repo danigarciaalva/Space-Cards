@@ -1,9 +1,6 @@
 package mx.uvdroids.spacecards;
 
-import java.util.ArrayList;
-
 import mx.uvdroids.spacecards.adapters.QuestionAdapter;
-
 import com.viewpagerindicator.CirclePageIndicator;
 
 import android.app.Activity;

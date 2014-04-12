@@ -41,7 +41,6 @@ public class ViewAdapter extends PagerAdapter {
 	public Object instantiateItem(View container, int position){
 		View view = new  View(context);
 		view = views.get(position);
-		
 		((ViewPager) container).addView(view, 0);
 		return view;
 	}
