@@ -5,6 +5,8 @@ import mx.uvdroids.spacecards.adapters.ViewAdapter;
 import com.viewpagerindicator.CirclePageIndicator;
 
 import android.app.Activity;
+import android.content.Context;
+import android.content.Intent;
 import android.graphics.PixelFormat;
 import android.media.MediaPlayer;
 import android.media.MediaPlayer.OnCompletionListener;
@@ -12,6 +14,8 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v4.view.ViewPager;
+import android.view.View;
+import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.VideoView;
 
@@ -23,6 +27,7 @@ public class WalkthroughActivity extends Activity {
 	CirclePageIndicator mIndicator;
 	Handler handler;
 	VideoView video;
+	Context context = this;
 	private Runnable increment = new Runnable() {
 		@Override
 		public void run() {
@@ -56,6 +61,16 @@ public class WalkthroughActivity extends Activity {
         mIndicator = (CirclePageIndicator)findViewById(R.id.indicator);
         mIndicator.setViewPager(viewPager);
         handler = new Handler();
+        start = (Button)findViewById(R.id.start_button);
+        start.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				Intent i = new Intent(context, MainActivity.class);
+				startActivity(i);
+				finish();
+			}
+		});
 	}
 	
 	@Override
