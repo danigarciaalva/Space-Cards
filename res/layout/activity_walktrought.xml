@@ -5,10 +5,10 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="#000000">
-    <ImageView 
+    <VideoView 
+        android:id="@+id/tutorial_video"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:scaleType="centerCrop"/>
+        android:layout_height="match_parent"/>
     <ImageView 
         android:layout_width="wrap_content"
         android:layout_height="200dp"
