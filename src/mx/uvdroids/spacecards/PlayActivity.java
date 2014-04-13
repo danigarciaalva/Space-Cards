@@ -11,6 +11,7 @@ import com.viewpagerindicator.CirclePageIndicator;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.support.v4.view.PagerAdapter;
@@ -24,7 +25,6 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
-import android.widget.Toast;
 import android.widget.TextView;
 import android.widget.AdapterView.OnItemClickListener;
 
@@ -39,6 +39,7 @@ public class PlayActivity extends Activity  implements OnItemClickListener, OnCl
 	private int total_questions = 0;
 	private LinearLayout screen_pause, screen_correct, screen_wrong;
 	private Button resume, exit, settings;
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -89,7 +90,6 @@ public class PlayActivity extends Activity  implements OnItemClickListener, OnCl
 
 		@Override
 		public int getCount() {
-			// TODO Auto-generated method stub
 			return views.size();
 		}
 
@@ -150,7 +150,13 @@ public class PlayActivity extends Activity  implements OnItemClickListener, OnCl
 	}
 
 	public void saveScore(){
-		Toast.makeText(this, "Es hora de guardar los scores", Toast.LENGTH_SHORT).show();
+		System.out.println("Score: "+correct+" No. Preguntas: "+questions.size()+" Category: "+categories[category]);
+		Intent i = new Intent(this, Score.class);
+		i.putExtra("score", String.valueOf(correct));
+		i.putExtra("n_preguntas", String.valueOf(questions.size()));
+		i.putExtra("category", categories[category]);
+		startActivity(i);
+		finish();
 	}
 	
 	public void showViews(boolean state){
@@ -189,6 +195,10 @@ public class PlayActivity extends Activity  implements OnItemClickListener, OnCl
 			break;
 		case R.id.exit_game:
 			finish();
+			break;
+		case R.id.settings_pause:
+			Intent i = new Intent(this, Settings.class);
+			startActivity(i);
 			break;
 		default:
 			break;

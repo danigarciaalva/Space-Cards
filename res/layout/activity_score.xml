@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_margin="10dp"
+	    android:id="@+id/card_score"
+	    android:layout_alignParentTop="true"
+	    android:background="@drawable/card"
+	    android:orientation="vertical"
+	    android:gravity="center">
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="32sp"
+	        android:id="@+id/score_score_text"
+	        android:layout_margin="10dp"
+	        android:text="@string/score_text"/>
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:id="@+id/score_score_counter"
+	        android:textSize="40sp"/>
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="28sp"
+	        android:id="@+id/score_best_score"
+	        android:layout_margin="10dp"/>
+	</LinearLayout>
+	<View 
+    android:id="@+id/viewCenter"
+    android:layout_width="1px"
+    android:layout_height="1px"
+    android:layout_centerHorizontal="true"
+    android:layout_below="@id/card_score"
+    android:layout_marginRight="5dp"
+    android:layout_marginLeft="5dp"/>
+
+<Button
+    android:id="@+id/replay"
+    android:layout_below="@id/card_score"
+    android:layout_alignParentLeft="true"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_toLeftOf="@+id/viewCenter"
+    android:text="@string/replay" />
+
+<Button
+    android:id="@+id/back_to_main_menu"
+    android:layout_width="wrap_content"
+    android:layout_below="@id/card_score"
+    android:layout_height="wrap_content"
+    android:layout_alignParentRight="true"
+    android:layout_marginRight="10dp"
+    android:layout_toRightOf="@+id/viewCenter"
+    android:text="@string/back"/>
+	<RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/leaderboard_score"
+        android:layout_height="fill_parent" 
+        android:layout_below="@id/replay"
+    	android:layout_margin="10dp">
+    </RelativeLayout>
+
+</RelativeLayout>

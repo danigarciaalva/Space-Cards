@@ -5,4 +5,11 @@
     android:orientation="vertical" >
     
 
+    <ListView 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="10dp"
+        android:id="@+id/achievements_list"
+        android:dividerHeight="10.0sp"
+        android:divider="@android:color/transparent"></ListView>
 </LinearLayout>

@@ -19,6 +19,8 @@
 	<string name="next">Next</string>
 	<string name="resume">Resume</string>
 	<string name="back">Back to menu</string>
+	<string name="replay">Play again</string>
+	<string name="share">Share</string>
     <string-array name="tutorial_texts">
         <item>Lorem ipsum</item>
         <item>Lorem ipsum</item>
@@ -62,4 +64,45 @@
         <item>c) Answer three</item>
         <item>d) Answer four</item>
     </string-array>
+    
+    <string-array name="achievements_names">
+        <item>UFO</item>
+        <item>Spaceman</item>
+        <item>Jupiter</item>
+        <item>Mars men</item>
+        <item>Galaga</item>
+        <item>Pluton</item>
+        <item>Intelsat</item>
+        <item>Burning Sun</item>
+    </string-array>
+    <string-array name="achievements_descriptions">
+        <item>Play 5 times</item>
+        <item>Play 10 times</item>
+        <item>Answer correctly 15+ questions on hard</item>
+        <item>Win a game on expert</item>
+        <item>Win a game on each category</item>
+        <item>Win a game on hard</item>
+        <item>Found the secret satellite</item>
+        <item>Play 20 times</item>
+    </string-array>
+    <array name="achievements_icons">
+        <item>@drawable/ac_alien</item>
+        <item>@drawable/ac_cohete</item>
+        <item>@drawable/ac_jupiter</item>
+        <item>@drawable/ac_marte</item>
+        <item>@drawable/ac_milkyway</item>
+        <item>@drawable/ac_pluton</item>
+        <item>@drawable/ac_satelite</item>
+        <item>@drawable/ac_sol</item>
+    </array>
+    <array name="achievements_icons_disabled">
+        <item>@drawable/ac_dis_alien</item>
+        <item>@drawable/ac_dis_cohete</item>
+        <item>@drawable/ac_dis_jupiter</item>
+        <item>@drawable/ac_dis_marte</item>
+        <item>@drawable/ac_dis_milkyway</item>
+        <item>@drawable/ac_dis_pluton</item>
+        <item>@drawable/ac_dis_satelite</item>
+        <item>@drawable/ac_dis_sol</item>
+    </array>
 </resources>

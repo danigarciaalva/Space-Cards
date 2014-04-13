@@ -4,11 +4,11 @@
         <CheckBoxPreference
             android:key="music"
             android:title="Music"
-            android:summary="Turn on/off the music of Spaceapps" />
+            android:summary="Turn on/off the music of Space Cards" />
         <CheckBoxPreference
             android:key="sound"
             android:title="Sound"
-            android:summary="Turn on/off the sounds of Spaceapps"/>
+            android:summary="Turn on/off the sounds of Space Cards"/>
     </PreferenceCategory>
     <PreferenceCategory android:title="About">
         <Preference 
@@ -19,6 +19,15 @@
                 android:action="android.intent.action.VIEW"
                 android:targetPackage="mx.uvdroids.spacecards"
                 android:targetClass="mx.uvdroids.spacecards.Instructions"/>
+        </Preference>
+        <Preference 
+            android:key="credits"
+            android:title="Credits"
+            android:summary="Detailed credits about Space Cards">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:targetPackage="mx.uvdroids.spacecards"
+                android:targetClass="mx.uvdroids.spacecards.About"/>
         </Preference>
     </PreferenceCategory>
 </PreferenceScreen>

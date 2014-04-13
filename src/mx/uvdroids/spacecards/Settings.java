@@ -9,6 +9,7 @@ public class Settings extends PreferenceActivity{
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		getActionBar().setTitle("Settings");
 		addPreferencesFromResource(R.xml.activity_settings);
 	}
 }

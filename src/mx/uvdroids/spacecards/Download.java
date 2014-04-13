@@ -16,6 +16,7 @@ import mx.uvdroids.spacecards.model.Files;
 import mx.uvdroids.spacecards.model.Question;
 import android.app.Activity;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.AsyncTask;
@@ -27,7 +28,7 @@ public class Download extends Activity{
 
 	private ProgressBar progressBar;
 	private TextView textView;
-	 
+	private SharedPreferences mPrefs;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -115,8 +116,14 @@ public class Download extends Activity{
 		protected void onPostExecute(Boolean result) {
 			if(true){
 				progressBar.setIndeterminate(false);
-				Intent i = new Intent(getBaseContext(), MainActivity.class);
-				startActivity(i);
+				mPrefs = getSharedPreferences("spacecardsPrefs", MODE_PRIVATE);
+    			if (!mPrefs.contains(SplashScreen.PREF_WALKTROUGHT) && !mPrefs.getBoolean(SplashScreen.PREF_WALKTROUGHT, false)){
+    				Intent i = new Intent(getBaseContext(), WalkthroughActivity.class);
+                    startActivity(i);
+    			}else{
+    				Intent i = new Intent(getBaseContext(), MainActivity.class);
+                    startActivity(i);
+    			}
 				finish();
 			}
 			

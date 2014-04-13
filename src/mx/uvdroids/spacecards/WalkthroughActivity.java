@@ -1,12 +1,15 @@
 package mx.uvdroids.spacecards;
 
 import mx.uvdroids.spacecards.adapters.ViewAdapter;
+import mx.uvdroids.spacecards.model.SQLiteAchievementHelper;
+import mx.uvdroids.spacecards.model.SQLiteScoreHelper;
 
 import com.viewpagerindicator.CirclePageIndicator;
 
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.PixelFormat;
 import android.media.MediaPlayer;
 import android.media.MediaPlayer.OnCompletionListener;
@@ -28,6 +31,7 @@ public class WalkthroughActivity extends Activity {
 	Handler handler;
 	VideoView video;
 	Context context = this;
+	private SharedPreferences mPrefs;
 	private Runnable increment = new Runnable() {
 		@Override
 		public void run() {
@@ -40,6 +44,8 @@ public class WalkthroughActivity extends Activity {
 		      handler.postDelayed(increment, 4000);
 		}
 	};
+	
+	@SuppressWarnings("unused")
 	@Override
 	protected void onCreate(Bundle savedInstanceState){
 		super.onCreate(savedInstanceState);
@@ -71,6 +77,12 @@ public class WalkthroughActivity extends Activity {
 				finish();
 			}
 		});
+        mPrefs = getSharedPreferences("spacecardsPrefs", MODE_PRIVATE);
+        SharedPreferences.Editor editor = mPrefs.edit();
+        editor.putBoolean(SplashScreen.PREF_WALKTROUGHT, true);
+        editor.commit();
+        SQLiteAchievementHelper db = new SQLiteAchievementHelper(this, "achievements", null, 1);
+        SQLiteScoreHelper db2 = new SQLiteScoreHelper(this, "scores", null, 1);
 	}
 	
 	@Override

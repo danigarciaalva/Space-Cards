@@ -10,7 +10,7 @@ import android.widget.Button;
 
 public class MainActivity extends Activity implements OnClickListener{
 
-	private Button play, settings;
+	private Button play, settings, leaderboard, achievements;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -20,6 +20,10 @@ public class MainActivity extends Activity implements OnClickListener{
 		play.setOnClickListener(this);
 		settings = (Button)findViewById(R.id.settings);
 		settings.setOnClickListener(this);
+		leaderboard = (Button)findViewById(R.id.leaderboard);
+		leaderboard.setOnClickListener(this);
+		achievements = (Button)findViewById(R.id.achievements);
+		achievements.setOnClickListener(this);
 	}
 
 	@Override

@@ -8,5 +8,6 @@ public class Instructions extends Activity{
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		getActionBar().setTitle("Instructions");
 	}
 }

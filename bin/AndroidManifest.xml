@@ -10,6 +10,7 @@
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
 
     <application
         android:allowBackup="true"
@@ -41,6 +42,13 @@
            		<category android:name="android.intent.category.DEFAULT" />
        		</intent-filter>
         </activity>
+        <activity android:name="mx.uvdroids.spacecards.About">
+            <intent-filter>
+           		<action android:name=".About" />
+           		<category android:name="android.intent.category.DEFAULT" />
+       		</intent-filter>
+        </activity>
+        <activity android:name="mx.uvdroids.spacecards.Score"></activity>
     </application>
 
 </manifest>
