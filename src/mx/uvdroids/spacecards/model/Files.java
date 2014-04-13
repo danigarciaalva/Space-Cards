@@ -74,7 +74,6 @@ public class Files {
 			q.posible_answers = new ArrayList<String>();
 			for(int j=0;j<answers.length();j++){
 				q.posible_answers.add(answers.getString(j));
-				System.out.println(answers.getString(j));
 			}
 			ArrayQuestions.add(q);
 			

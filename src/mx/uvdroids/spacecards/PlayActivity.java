@@ -2,7 +2,9 @@ package mx.uvdroids.spacecards;
 
 import java.io.File;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.LinkedList;
+import java.util.Random;
 
 import mx.uvdroids.spacecards.model.Files;
 import mx.uvdroids.spacecards.model.Question;
@@ -13,6 +15,7 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.BitmapFactory;
+
 import android.os.Bundle;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
@@ -47,12 +50,26 @@ public class PlayActivity extends Activity  implements OnItemClickListener, OnCl
 		setContentView(R.layout.activity_play);
 		getActionBar().hide();
 		category = getIntent().getIntExtra(ChooseCategory.CATEGORY, -1);
-		questions = Files.LoadQuestions(categories[category]);
-		total_questions = questions.size();
-		viewPager = (ViewPager)findViewById(R.id.viewPagerQuestions);
-		viewPager.setAdapter(new QuestionAdapter(getBaseContext(), questions));
-        mIndicator = (CirclePageIndicator)findViewById(R.id.indicatorQuestions);
-        mIndicator.setViewPager(viewPager);
+		new Thread(new Runnable() {
+			
+			@Override
+			public void run() {
+				questions = Files.LoadQuestions(categories[category]);
+				long seed = System.nanoTime();
+				Collections.shuffle(questions, new Random(seed));
+				total_questions = questions.size();
+				runOnUiThread(new Runnable() {
+					
+					@Override
+					public void run() {
+						viewPager = (ViewPager)findViewById(R.id.viewPagerQuestions);
+						viewPager.setAdapter(new QuestionAdapter(getBaseContext(), questions));
+				        mIndicator = (CirclePageIndicator)findViewById(R.id.indicatorQuestions);
+				        mIndicator.setViewPager(viewPager);
+					}
+				});
+			}
+		}).start();
         screen_pause = (LinearLayout)findViewById(R.id.screen_pause);
         screen_correct = (LinearLayout)findViewById(R.id.screen_correct);
         screen_wrong = (LinearLayout)findViewById(R.id.screen_wrong);

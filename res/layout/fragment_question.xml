@@ -32,7 +32,6 @@
 	        android:layout_height="180dp"
 	        android:scaleType="centerCrop"
 	        android:adjustViewBounds="false"
-	        android:src="@drawable/earth"
 	        android:id="@+id/image_question"
 	        android:contentDescription="@string/content_description"/>
     </LinearLayout>
@@ -41,7 +40,6 @@
 	    android:dividerHeight="5.0sp"
 	    android:layout_below="@id/image_container"
 	    android:layout_margin="10dp"
-	    android:listSelector="@drawable/item_selector"
 	    android:layout_width="match_parent"
 	    android:layout_height="wrap_content"
 	    android:id="@+id/options_question"

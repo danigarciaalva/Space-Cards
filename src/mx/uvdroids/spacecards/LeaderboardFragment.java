@@ -52,7 +52,7 @@ public class LeaderboardFragment extends Fragment{
 			if(position == 0)
 				return new LeaderboardLocal();
 			else{
-				return new LeaderboardLocal();
+				return new LeaderBoardGlobal();
 			}
 		}
 
