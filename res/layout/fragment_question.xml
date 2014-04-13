@@ -12,7 +12,7 @@
         android:textSize="20sp"
         android:padding="10dp"
         android:layout_height="wrap_content"
-        android:text="Here goes the question"
+        android:text="@string/loading_questions"
         android:gravity="center"
         android:id="@+id/question"/>
     <LinearLayout 

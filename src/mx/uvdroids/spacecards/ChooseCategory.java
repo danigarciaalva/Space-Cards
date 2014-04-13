@@ -20,6 +20,7 @@ import android.widget.ListView;
 
 public class ChooseCategory extends Activity implements OnItemClickListener{
 	public static final String LEVEL = "level";
+	public static final String CATEGORY = "category";
 	public static final int LEVEL_EASY = 0;
 	public static final int LEVEL_MEDIUM = 1;
 	public static final int LEVEL_HARD = 2;
@@ -55,7 +56,7 @@ public class ChooseCategory extends Activity implements OnItemClickListener{
 
 	int level = 0;
 	@Override
-	public void onItemClick(AdapterView<?> arg0, View view, int position, long arg3) {
+	public void onItemClick(AdapterView<?> arg0, View view, final int position, long arg3) {
 		String[] levels = getResources().getStringArray(R.array.level_options);
 		AlertDialog.Builder builder = new AlertDialog.Builder(this);
 		builder.setTitle(getResources().getString(R.string.choose_level));
@@ -66,6 +67,7 @@ public class ChooseCategory extends Activity implements OnItemClickListener{
 				level = which;
 				Intent i = new Intent(context, PlayActivity.class);
 				i.putExtra(LEVEL, level);
+				i.putExtra(CATEGORY, position);
 				startActivity(i);
 				finish();
 			}

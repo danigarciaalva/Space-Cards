@@ -1,12 +1,12 @@
 package mx.uvdroids.spacecards;
 
 import java.io.BufferedReader;
+import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
-import java.io.OutputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.net.URLConnection;
@@ -15,6 +15,7 @@ import java.util.ArrayList;
 import mx.uvdroids.spacecards.model.Files;
 import mx.uvdroids.spacecards.model.Question;
 import android.app.Activity;
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.AsyncTask;
@@ -25,7 +26,6 @@ import android.widget.TextView;
 public class Download extends Activity{
 
 	private ProgressBar progressBar;
-	private int progressStatus = 0;
 	private TextView textView;
 	 
 	@Override
@@ -34,9 +34,10 @@ public class Download extends Activity{
 		setContentView(R.layout.activity_download);
 		getActionBar().hide();
 		progressBar = (ProgressBar) findViewById(R.id.downloading);
+		progressBar.setIndeterminate(true);
 		textView = (TextView) findViewById(R.id.downloading_progress);
-		 Downloading task = new Downloading();
-		 task.execute();
+		Downloading task = new Downloading();
+		task.execute();
 	}
 	
 	class Downloading extends AsyncTask<Void, String, Boolean>{
@@ -56,7 +57,7 @@ public class Download extends Activity{
 			        }
 			        Files.createJson(json.toString(),srcs[i]+".json",Files.FILES);
 			        final ArrayList<Question> questions = Files.LoadQuestions(srcs[i]);
-			        for(int j = 0; j < questions.size(); i ++){
+			        for(int j = 0; j < questions.size(); j ++){
 			        	final int k = j;
 			        	publishProgress(questions.get(k).image,"two");
 			        	String src = "http://mobileapps.dragonflylabs.com.mx"+questions.get(k).image;
@@ -70,14 +71,19 @@ public class Download extends Activity{
 				        String[] name = src.split("/");
 				        String realname = name[name.length-1];
 				        
-				        OutputStream fOut = null;
 				        Files.checkFolder(Files.APP_FOLDER);
 				        Files.checkFolder(Files.APP_FOLDER+Files.IMAGES);
 			            File file = new File(Files.ruta_sd+Files.APP_FOLDER+Files.IMAGES,realname);
-			            fOut = new FileOutputStream(file);
+			            
+			            ByteArrayOutputStream fOut = new ByteArrayOutputStream();
+			            FileOutputStream stream = new FileOutputStream(file);
 			            myBitmap.compress(Bitmap.CompressFormat.JPEG, 100, fOut);
-			            fOut.flush();
-			            fOut.close();
+			            byte[] array = fOut.toByteArray();
+			            stream.write(array);
+			            stream.close();
+			            myBitmap.recycle();
+			            myBitmap = null;
+			            System.out.println("Guarde una imagen");
 			            publishProgress(questions.get(k).image,"three");
 			        }
 			        publishProgress(srcs[i],"four");
@@ -108,6 +114,13 @@ public class Download extends Activity{
 		
 		@Override
 		protected void onPostExecute(Boolean result) {
+			if(true){
+				progressBar.setIndeterminate(false);
+				Intent i = new Intent(getBaseContext(), MainActivity.class);
+				startActivity(i);
+				finish();
+			}
+			
 		}
 	}
 
