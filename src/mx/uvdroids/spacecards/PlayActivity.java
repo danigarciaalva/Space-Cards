@@ -119,7 +119,7 @@ public class PlayActivity extends Activity  implements OnItemClickListener, OnCl
 		Question q = questions.get(viewPager.getCurrentItem());
 		TextView score = null;
 		Button next = null;
-		if(position == q.position_correct_answer){
+		if(position == q.position_correct_answer-1){
 			score = (TextView)screen_correct.findViewById(R.id.score_counter);
 			next = (Button)screen_correct.findViewById(R.id.next);
 			correct++;
@@ -127,6 +127,8 @@ public class PlayActivity extends Activity  implements OnItemClickListener, OnCl
 		}else{
 			score = (TextView)screen_wrong.findViewById(R.id.score_counter);
 			next = (Button)screen_wrong.findViewById(R.id.next);
+			TextView correct_answer = (TextView)screen_wrong.findViewById(R.id.screen_wrong_correct);
+			correct_answer.setText(q.posible_answers.get(q.position_correct_answer-1));
 			showViews(false);
 		}
 		score.setText(String.valueOf(correct)+"/"+String.valueOf(total_questions));

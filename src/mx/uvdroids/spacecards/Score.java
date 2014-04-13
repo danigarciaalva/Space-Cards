@@ -1,5 +1,13 @@
 package mx.uvdroids.spacecards;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+import mx.uvdroids.spacecards.model.SQLiteScoreHelper;
+import mx.uvdroids.spacecards.model.ScorePOJO;
+import android.accounts.Account;
+import android.accounts.AccountManager;
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
@@ -16,6 +24,7 @@ public class Score extends FragmentActivity implements OnClickListener{
 	String n_preguntas;
 	String category;
 	Button play_again, back_to_menu;
+	@SuppressLint("SimpleDateFormat")
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -34,6 +43,18 @@ public class Score extends FragmentActivity implements OnClickListener{
 		play_again.setOnClickListener(this);
 		back_to_menu.setOnClickListener(this);
 		getSupportFragmentManager().beginTransaction().replace(R.id.leaderboard_score, new LeaderboardFragment()).commit();
+		ScorePOJO s = new ScorePOJO();
+		s.category = category;
+		s.score = Integer.parseInt(score);
+		SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMdd_HHmmss");
+		s.date = sdf.format(new Date());
+		AccountManager manager = (AccountManager)getSystemService(ACCOUNT_SERVICE);
+		Account[] list = manager.getAccounts();
+		if(list.length > 0)
+			s.name = list[0].name;
+		else
+			s.name = "Unknown";
+		SQLiteScoreHelper.insert(s, this);
 	}
 	@Override
 	public void onClick(View v) {

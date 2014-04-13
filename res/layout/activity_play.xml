@@ -114,12 +114,28 @@
 	        android:textSize="32sp"
 	        android:textColor="#FF0000"
 	        android:textStyle="bold"
-	        android:layout_margin="20dp"
+	        android:layout_margin="10dp"
 	        android:text="@string/wrong"/>
+        <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="20sp"
+	        android:textColor="#FFFFFF"
+	        android:layout_margin="10dp"
+	        android:text="@string/correct_answer"/>
+        <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="22sp"
+	        android:id="@+id/screen_wrong_correct"
+	        android:textColor="#FFFFFF"
+	        android:layout_marginBottom="30dp"
+	        android:layout_margin="10dp"/>
 	    <TextView 
 	        android:layout_width="wrap_content"
 	        android:layout_height="wrap_content"
 	        android:textSize="24sp"
+	        android:layout_margin="20dp"
 	        android:textColor="#FFFFFF"
 	        android:textStyle="bold"
 	        android:text="@string/score_text"/>

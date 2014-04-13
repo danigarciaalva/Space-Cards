@@ -59,12 +59,22 @@
     android:layout_marginRight="10dp"
     android:layout_toRightOf="@+id/viewCenter"
     android:text="@string/back"/>
+<TextView 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:layout_margin="10dp"
+    android:textSize="24sp"
+    android:text="@string/highscores"
+    android:layout_below="@id/replay"
+    android:id="@+id/text_highscore"/>
 	<RelativeLayout
         android:layout_width="match_parent"
         android:id="@+id/leaderboard_score"
         android:layout_height="fill_parent" 
-        android:layout_below="@id/replay"
-    	android:layout_margin="10dp">
+        android:layout_below="@id/text_highscore"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
     </RelativeLayout>
 
 </RelativeLayout>

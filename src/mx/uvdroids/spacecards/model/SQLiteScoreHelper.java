@@ -18,8 +18,8 @@ public class SQLiteScoreHelper extends SQLiteOpenHelper {
 		db.execSQL("drop table if exists scores");
 		db.execSQL("create table scores(id integer primary key, score integer, date text, name text, level text,category text)");		
 	}
-	public static void insert(Score score,Context c){
-		SQLiteAchievementHelper admin = new SQLiteAchievementHelper(c, "scores",null,1);
+	public static void insert(ScorePOJO score,Context c){
+		SQLiteScoreHelper admin = new SQLiteScoreHelper(c, "scores",null,1);
 		SQLiteDatabase db = admin.getWritableDatabase();
 		ContentValues registro = new ContentValues();
 		registro.put("score",score.score);
@@ -31,16 +31,16 @@ public class SQLiteScoreHelper extends SQLiteOpenHelper {
 		db.close();
 	}
 	
-	public static ArrayList<Score> getAll(Context con) {
-		ArrayList<Score> puntuaciones;
-		Score p;
-		SQLiteAchievementHelper admin = new SQLiteAchievementHelper(con, "scores",null,1);
+	public static ArrayList<ScorePOJO> getAll(Context con) {
+		ArrayList<ScorePOJO> puntuaciones;
+		ScorePOJO p;
+		SQLiteScoreHelper admin = new SQLiteScoreHelper(con, "scores",null,1);
 		SQLiteDatabase db = admin.getReadableDatabase();
 		Cursor c = db.rawQuery("SELECT * from scores order by score DESC", null);
-		puntuaciones = new ArrayList<Score>();
+		puntuaciones = new ArrayList<ScorePOJO>();
 		if (c.moveToFirst()) {
 		     do {
-		    	  p = new Score();
+		    	  p = new ScorePOJO();
 		    	  p.id = c.getInt(0);
 		    	  p.score = c.getInt(1);
 		    	  p.date = c.getString(2);
@@ -56,7 +56,7 @@ public class SQLiteScoreHelper extends SQLiteOpenHelper {
 
 	@Override
 	public void onCreate(SQLiteDatabase db) {
-		// TODO Auto-generated method stub
-		
+		db.execSQL("drop table if exists scores");
+		db.execSQL("create table scores(id integer primary key, score integer, date text, name text, level text,category text)");
 	}
 }
