@@ -379,15 +379,16 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int play=0x7f020014;
         public static final int settings=0x7f020015;
         public static final int space1=0x7f020016;
-        public static final int vpi__tab_indicator=0x7f020017;
-        public static final int vpi__tab_selected_focused_holo=0x7f020018;
-        public static final int vpi__tab_selected_holo=0x7f020019;
-        public static final int vpi__tab_selected_pressed_holo=0x7f02001a;
-        public static final int vpi__tab_unselected_focused_holo=0x7f02001b;
-        public static final int vpi__tab_unselected_holo=0x7f02001c;
-        public static final int vpi__tab_unselected_pressed_holo=0x7f02001d;
-        public static final int water=0x7f02001e;
-        public static final int weather=0x7f02001f;
+        public static final int spaceapps=0x7f020017;
+        public static final int vpi__tab_indicator=0x7f020018;
+        public static final int vpi__tab_selected_focused_holo=0x7f020019;
+        public static final int vpi__tab_selected_holo=0x7f02001a;
+        public static final int vpi__tab_selected_pressed_holo=0x7f02001b;
+        public static final int vpi__tab_unselected_focused_holo=0x7f02001c;
+        public static final int vpi__tab_unselected_holo=0x7f02001d;
+        public static final int vpi__tab_unselected_pressed_holo=0x7f02001e;
+        public static final int water=0x7f02001f;
+        public static final int weather=0x7f020020;
     }
     public static final class id {
         public static final int achievements=0x7f05000f;

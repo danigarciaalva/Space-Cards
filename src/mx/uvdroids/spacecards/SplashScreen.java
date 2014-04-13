@@ -31,7 +31,7 @@ public class SplashScreen extends Activity{
                 	
                 } finally {
                     finish();
-                    Intent i = new Intent(getBaseContext(), Download.class);
+                    Intent i = new Intent(getBaseContext(), MainActivity.class);
                     startActivity(i);
                     this.interrupt();
                 }

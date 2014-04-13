@@ -83,7 +83,6 @@ public class Download extends Activity{
 			            stream.close();
 			            myBitmap.recycle();
 			            myBitmap = null;
-			            System.out.println("Guarde una imagen");
 			            publishProgress(questions.get(k).image,"three");
 			        }
 			        publishProgress(srcs[i],"four");

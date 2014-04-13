@@ -1,18 +1,20 @@
 package mx.uvdroids.spacecards.adapters;
 
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import mx.uvdroids.spacecards.R;
+import mx.uvdroids.spacecards.model.Files;
 import mx.uvdroids.spacecards.model.Question;
-
-import android.app.Activity;
 import android.content.Context;
+import android.graphics.BitmapFactory;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -33,6 +35,11 @@ public class QuestionAdapter extends PagerAdapter {
     		ListView answers = (ListView)v.findViewById(R.id.options_question);
     		title.setText(q.question);
     		answers.setAdapter(new ArrayAdapter<String>(context, android.R.layout.simple_list_item_1, q.posible_answers));
+    		String[] name = q.image.split("/");
+	        String realname = name[name.length-1];
+    		File file = new File(Files.ruta_sd+Files.APP_FOLDER+Files.IMAGES,realname);
+    		ImageView image = (ImageView)v.findViewById(R.id.image_question);
+    		image.setImageBitmap(BitmapFactory.decodeFile(file.getAbsolutePath()));
     		views.add(v);
     	}
     }
@@ -47,7 +54,6 @@ public class QuestionAdapter extends PagerAdapter {
 	public Object instantiateItem(View container, int position){
 		View view = new  View(context);
 		view = views.get(position);
-		
 		((ViewPager) container).addView(view, 0);
 		return view;
 	}

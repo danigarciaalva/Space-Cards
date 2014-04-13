@@ -32,7 +32,6 @@ public class Files {
 	    OutputStreamWriter fout = new OutputStreamWriter(new FileOutputStream(f));
 	    fout.write(json);
 	    fout.close();
-	    System.out.println("se creo el archivo");
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -40,7 +39,6 @@ public class Files {
 	public static String LoadJson(String name,String folder){
 		String json = "";
 		File f = new File(ruta_sd.getAbsolutePath(), APP_FOLDER+folder+name);
-		System.out.println(APP_FOLDER+folder+name);
 		try {
     	    BufferedReader fin =
     	        new BufferedReader(
@@ -58,7 +56,6 @@ public class Files {
 		        ex.printStackTrace();
 		        return null;
 		    }
-		System.out.println(json);
 		return json;
 	}
 	public static ArrayList<Question> LoadQuestions(String category){

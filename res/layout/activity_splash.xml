@@ -4,10 +4,13 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    android:background="#e0e0e0">
+    android:background="#000000">
     
     <ImageView 
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:src="@drawable/spaceapps"
+        android:padding="40dp"
+        android:contentDescription="@string/content_description"
         android:layout_gravity="center_vertical|center_horizontal"/>
 </LinearLayout>
