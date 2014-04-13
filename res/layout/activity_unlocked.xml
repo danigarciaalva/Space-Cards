@@ -2,14 +2,13 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" 
-    android:layout_margin="40dp"
-    android:background="@drawable/card">
+    android:orientation="vertical" >
     <TextView 
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/you_have_unlocked"
         android:textSize="30sp"
+        android:layout_margin="40dp"
         android:id="@+id/unlocked_amount"
         android:fontFamily="sans-serif-light"
         android:textColor="#000000"

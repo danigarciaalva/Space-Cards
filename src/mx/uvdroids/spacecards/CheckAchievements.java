@@ -3,7 +3,7 @@ package mx.uvdroids.spacecards;
 import java.util.ArrayList;
 
 import android.content.Context;
-import android.content.Intent;
+import android.widget.Toast;
 
 import mx.uvdroids.spacecards.model.Achievement;
 import mx.uvdroids.spacecards.model.SQLiteAchievementHelper;
@@ -75,9 +75,12 @@ public class CheckAchievements {
 			ids[i] = a.id;
 		}
 		if(ids.length > 0){
-			Intent i = new Intent(context, UnlockedAchievements.class);
-			i.putExtra("ids_unlocked", ids);
-			context.startActivity(i);
+			Toast.makeText(context, "You have unlocked: "+ids.length+" achievements", Toast.LENGTH_LONG).show();
 		}
+	}
+	
+	public static void unlock(Context con){
+		SQLiteAchievementHelper.unlock(7, con);
+		Toast.makeText(con, "You have unlocked 1 achievements", Toast.LENGTH_LONG).show();
 	}
 }

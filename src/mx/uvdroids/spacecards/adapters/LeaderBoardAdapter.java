@@ -34,7 +34,7 @@ public class LeaderBoardAdapter extends ArrayAdapter<ScorePOJO>{
 		TextView leader_score = (TextView)v.findViewById(R.id.leaderboard_score);
 		ScorePOJO s = getItem(position);
 		leader_name.setText(s.name);
-		leader_score.setText(String.valueOf(s.score));
+		leader_score.setText(String.valueOf(s.score)+" pts");
 		return v;
 	}
 }

@@ -28,9 +28,9 @@
          android:gravity="center"
          android:id="@+id/start_button"
          android:text="@string/get_started"
-         android:textColor="#a29f9f"
+         android:textColor="#ffffff"
          android:layout_alignParentBottom="true"
-         android:background="@drawable/get_started"/>
+         android:background="#dd00009a"/>
      <com.viewpagerindicator.CirclePageIndicator
         android:id="@+id/indicator"
         android:layout_height="wrap_content"

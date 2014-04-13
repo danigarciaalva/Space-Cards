@@ -20,37 +20,50 @@
         android:theme="@style/AppTheme" >
         <activity
             android:name="mx.uvdroids.spacecards.MainActivity"
-            android:label="@string/app_name" >
+            android:label="@string/app_name" 
+            android:screenOrientation="portrait">
         </activity>
         <activity 
-            android:name="mx.uvdroids.spacecards.SplashScreen">
+            android:name="mx.uvdroids.spacecards.SplashScreen"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="mx.uvdroids.spacecards.WalkthroughActivity"></activity>
-        <activity android:name="mx.uvdroids.spacecards.ChooseCategory"></activity>
-        <activity android:name="mx.uvdroids.spacecards.Leaderboard"></activity>
-        <activity android:name="mx.uvdroids.spacecards.Achievements"></activity>
-        <activity android:name="mx.uvdroids.spacecards.PlayActivity"></activity>
-        <activity android:name="mx.uvdroids.spacecards.Download"></activity>
-        <activity android:name="mx.uvdroids.spacecards.Settings"></activity>
-        <activity android:name="mx.uvdroids.spacecards.Instructions">
+        <activity android:name="mx.uvdroids.spacecards.WalkthroughActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name="mx.uvdroids.spacecards.ChooseCategory"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name="mx.uvdroids.spacecards.Leaderboard"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name="mx.uvdroids.spacecards.Achievements"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name="mx.uvdroids.spacecards.PlayActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name="mx.uvdroids.spacecards.Download"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name="mx.uvdroids.spacecards.Settings"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name="mx.uvdroids.spacecards.Instructions"
+            android:screenOrientation="portrait">
             <intent-filter>
            		<action android:name=".Instructions" />
            		<category android:name="android.intent.category.DEFAULT" />
        		</intent-filter>
         </activity>
-        <activity android:name="mx.uvdroids.spacecards.About">
+        <activity android:name="mx.uvdroids.spacecards.About" android:screenOrientation="portrait">
             <intent-filter>
            		<action android:name=".About" />
            		<category android:name="android.intent.category.DEFAULT" />
        		</intent-filter>
         </activity>
-        <activity android:name="mx.uvdroids.spacecards.Score"></activity>
-        <activity android:name="mx.uvdroids.spacecards.UnlockedAchievements"></activity>
+        <activity android:name="mx.uvdroids.spacecards.Score"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name="mx.uvdroids.spacecards.UnlockedAchievements"
+            android:theme="@android:style/Theme.Dialog"
+            android:screenOrientation="portrait"></activity>
     </application>
 
 </manifest>

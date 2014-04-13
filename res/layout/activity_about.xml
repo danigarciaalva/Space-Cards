@@ -12,6 +12,8 @@
 		        android:layout_marginLeft="10dp"
 		        android:layout_marginRight="10dp"
 		        android:layout_marginTop="5dp"
+		        android:clickable="true"
+		        android:onClick="aboutSpacecards"
 		        android:layout_marginBottom="5dp"
 		        android:background="@drawable/card"
 		        android:orientation="vertical">
@@ -24,7 +26,7 @@
 			        android:contentDescription="@string/content_description"
 			        android:adjustViewBounds="false"
 			        android:src="@drawable/spaceapps"
-			        android:id="@+id/spacecads_about"/>
+			        android:id="@+id/spacecards_about"/>
 		    </LinearLayout>
 		    <LinearLayout 
 		        android:layout_width="match_parent"
@@ -35,6 +37,8 @@
 		        android:layout_marginRight="10dp"
 		        android:layout_marginTop="5dp"
 		        android:layout_marginBottom="5dp"
+		        android:clickable="true"
+		        android:onClick="aboutUvdroids"
 		        android:background="@drawable/card"
 		        android:orientation="vertical">
 		        <ImageView 
@@ -56,6 +60,8 @@
 		        android:layout_marginLeft="10dp"
 		        android:layout_marginRight="10dp"
 		        android:layout_marginTop="5dp"
+		        android:clickable="true"
+		        android:onClick="aboutSpaceapps"
 		        android:layout_marginBottom="5dp"
 		        android:background="@drawable/card"
 		        android:orientation="vertical">

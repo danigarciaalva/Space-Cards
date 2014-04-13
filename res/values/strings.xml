@@ -26,10 +26,10 @@
 	<string name="you_have_unlocked">You have unlocked</string>
 	
     <string-array name="tutorial_texts">
-        <item>Lorem ipsum</item>
-        <item>Lorem ipsum</item>
-        <item>Lorem ipsum</item>
-        <item>Lorem ipsum</item>
+        <item>Welcome to Space Cards, a little game about knowledge of our mother Earth.</item>
+        <item>Here, you can learn about the weather phenomenoms, growing civilizations and other cool stuffs</item>
+        <item>Just choose a category, pick a level and start the learning and fun. We hope you enjoy it.</item>
+        <item>If there is any problem please let us to know it!</item>
     </string-array>
     
     <string-array name="titles_categories">
@@ -109,4 +109,12 @@
         <item>@drawable/ac_dis_satelite</item>
         <item>@drawable/ac_dis_sol</item>
     </array>
+    <string name="about_spaceapps">
+	    The International Space Apps Challenge is a two-day hackathon where teams of technologists, scientists, designers, artists, educators, entrepreneurs, developers and students across the globe collaborate and engage with publicly available data to design innovative solutions for global challenges.
+	</string>
+	<string name="about_uvdroids">
+		We are from Xalapa city, we are mobile developers and designers and we like participating in a different competitions related to development or technology.	</string>
+	<string name="about_spacecards">
+		The game let users play with different cards, each card contains a question and an image from certain category,  users have to chose the correct answer for each question, SpaceCards game let you share your score with your friends and also you can share the app.
+	</string>
 </resources>

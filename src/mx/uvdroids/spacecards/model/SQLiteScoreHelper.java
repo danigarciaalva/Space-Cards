@@ -35,8 +35,9 @@ public class SQLiteScoreHelper extends SQLiteOpenHelper {
 		SQLiteScoreHelper admin = new SQLiteScoreHelper(con, "scores",null,1);
 		SQLiteDatabase db = admin.getReadableDatabase();
 		Cursor c = db.rawQuery(query, null);
+		int count = c.getCount();
 		db.close();
-		return c.getCount();
+		return count;
 	}
 	public static ArrayList<ScorePOJO> getAll(Context con) {
 		ArrayList<ScorePOJO> puntuaciones;

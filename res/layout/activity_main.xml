@@ -30,7 +30,7 @@
         android:fontFamily="sans-serif-light"
         android:gravity="center"
         android:padding="5dp"
-        android:background="@android:color/transparent"
+        android:background="@drawable/over"
         android:layout_alignParentBottom="true"
         android:id="@+id/settings"
         />
@@ -49,7 +49,7 @@
         android:fontFamily="sans-serif-light"
         android:padding="5dp"
         android:layout_above="@id/settings"
-        android:background="@android:color/transparent"
+        android:background="@drawable/over"
         android:id="@+id/achievements"
         />
     
@@ -62,8 +62,8 @@
         android:text="@string/leaderboard"
         android:textSize="28sp"
         android:textStyle="bold"
+        android:background="@drawable/over"
         android:textColor="#e25e03"
-        android:background="@android:color/transparent"
         android:fontFamily="sans-serif-light"
         android:gravity="center"
         android:padding="5dp"
@@ -86,6 +86,6 @@
         android:textSize="28sp"
         android:textStyle="bold"
         android:textColor="#e25e03"
-        android:background="@android:color/transparent"
+        android:background="@drawable/over"
         />
 </RelativeLayout>

@@ -44,7 +44,7 @@
 		    android:textSize="28sp"
 	        android:textStyle="bold"
 	        android:textColor="#e25e03"
-	        android:background="@android:color/transparent"
+	        android:background="@drawable/over"
 	        android:fontFamily="sans-serif-light"
 		    android:id="@+id/resume"
 		    android:text="@string/resume"/>
@@ -58,7 +58,7 @@
 		    android:textSize="28sp"
 	        android:textStyle="bold"
 	        android:textColor="#e25e03"
-	        android:background="@android:color/transparent"
+	        android:background="@drawable/over"
 	        android:fontFamily="sans-serif-light"
 		    android:text="@string/settings"/>
 		<Button 
@@ -71,7 +71,7 @@
 		    android:textSize="28sp"
 	        android:textStyle="bold"
 	        android:textColor="#e25e03"
-	        android:background="@android:color/transparent"
+	        android:background="@drawable/over"
 	        android:fontFamily="sans-serif-light"
 		    android:text="@string/back"/>
 	</LinearLayout>
@@ -89,7 +89,7 @@
 	        android:layout_width="wrap_content"
 	        android:layout_height="wrap_content"
 	        android:textSize="32sp"
-	        android:textColor="#e25e03"
+	        android:textColor="#27d337"
 	        android:id="@+id/score_text"
 	        android:textStyle="bold"
 	        android:layout_margin="20dp"
@@ -120,7 +120,7 @@
 	        android:textSize="28sp"
 	        android:textStyle="bold"
 	        android:textColor="#e25e03"
-	        android:background="@android:color/transparent"
+	        android:background="@drawable/over"
 	        android:fontFamily="sans-serif-light"
 	        />
 	</LinearLayout>
@@ -138,7 +138,7 @@
 	        android:layout_width="wrap_content"
 	        android:layout_height="wrap_content"
 	        android:textSize="32sp"
-	        android:textColor="#e25e03"
+	        android:textColor="#dd1212"
 	        android:textStyle="bold"
 	        android:layout_margin="10dp"
 	        android:text="@string/wrong"/>
@@ -181,7 +181,7 @@
 	        android:textSize="28sp"
 	        android:textStyle="bold"
 	        android:textColor="#e25e03"
-	        android:background="@android:color/transparent"
+	        android:background="@drawable/over"
 	        android:fontFamily="sans-serif-light"
 	        android:layout_marginRight="40dp"
 	        android:text="@string/next"

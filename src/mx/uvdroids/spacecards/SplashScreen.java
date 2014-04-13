@@ -34,6 +34,9 @@ public class SplashScreen extends Activity{
                 } catch(InterruptedException e) {
                 	
                 } finally {
+                	Intent i = new Intent(getBaseContext(), WalkthroughActivity.class);
+                	startActivity(i);
+                	/*
                 	if(Connection.checkInternetConnection(a)){
                 		if(Server.isThereUpdates()){
                 			Intent i = new Intent(getBaseContext(), Download.class);
@@ -56,7 +59,7 @@ public class SplashScreen extends Activity{
                         startActivity(i);
                 	}
                     this.interrupt();
-                    finish();
+                    finish();*/
                 }
             }
         };

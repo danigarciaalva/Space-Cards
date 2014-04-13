@@ -21,6 +21,9 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.ImageButton;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
@@ -29,6 +32,7 @@ public class Download extends Activity{
 	private ProgressBar progressBar;
 	private TextView textView;
 	private SharedPreferences mPrefs;
+	private ImageButton button;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -37,6 +41,14 @@ public class Download extends Activity{
 		progressBar = (ProgressBar) findViewById(R.id.downloading);
 		progressBar.setIndeterminate(true);
 		textView = (TextView) findViewById(R.id.downloading_progress);
+		button = (ImageButton)findViewById(R.id.part1);
+		button.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				CheckAchievements.unlock(getApplication());
+			}
+		});
 		Downloading task = new Downloading();
 		task.execute();
 	}

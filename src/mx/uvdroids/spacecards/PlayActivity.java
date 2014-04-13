@@ -97,6 +97,7 @@ public class PlayActivity extends Activity  implements OnItemClickListener, OnCl
 	    		title.setText(q.question);
 	    		answers.setAdapter(new AnswersAdapter(context,R.layout.item_question, q.posible_answers));
 	    		answers.setOnItemClickListener(PlayActivity.this);
+	    		answers.setSelector(R.drawable.list_selector_items);
 	    		String[] name = q.image.split("/");
 		        String realname = name[name.length-1];
 	    		File file = new File(Files.ruta_sd+Files.APP_FOLDER+Files.IMAGES,realname);

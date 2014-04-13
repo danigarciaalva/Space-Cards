@@ -16,7 +16,7 @@ import org.apache.http.util.EntityUtils;
 public class Server {
 
 	public static boolean isThereUpdates(){
-		return false;
+		return true;
 	}
 	
 	public static void sendScore(final String score, final String name){

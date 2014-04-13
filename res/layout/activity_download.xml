@@ -16,7 +16,8 @@
     android:scaleY="0.8"
     android:rotation="10">
 
-    <ImageView android:id="@+id/part1"
+    <ImageButton android:id="@+id/part1"
+        android:background="@android:color/transparent"
         android:contentDescription="@string/content_description"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
