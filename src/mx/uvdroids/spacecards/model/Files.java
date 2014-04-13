@@ -73,9 +73,7 @@ public class Files {
 		
 		try {
 		JSONObject obj = new JSONObject(LoadJson(category+".json",FILES));
-		String base_url = obj.getString("base_url");
 		JSONArray questions = obj.getJSONArray("questions");
-		System.out.println(catego);
 		for(int i=0;i<questions.length();i++){
 			JSONObject question = questions.getJSONObject(i);
 			Question q = new Question();
@@ -83,6 +81,7 @@ public class Files {
 			q.image = question.getString("image");
 			q.position_correct_answer = question.getInt("correct");
 			JSONArray answers = question.getJSONArray("answers");
+			q.posible_answers = new ArrayList<String>();
 			for(int j=0;j<answers.length();j++){
 				q.posible_answers.add(answers.getString(j));
 				System.out.println(answers.getString(j));
@@ -91,7 +90,7 @@ public class Files {
 			
 		}
 		} catch (Exception e) {
-			// TODO: handle exception
+			e.printStackTrace();
 			return null;
 		}
 		return ArrayQuestions;

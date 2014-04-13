@@ -356,28 +356,33 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int default_title_indicator_top_padding=0x7f09000c;
     }
     public static final class drawable {
-        public static final int background=0x7f020000;
-        public static final int card=0x7f020001;
-        public static final int cities=0x7f020002;
-        public static final int cities2=0x7f020003;
-        public static final int description_shape=0x7f020004;
-        public static final int earth=0x7f020005;
-        public static final int ic_launcher=0x7f020006;
-        public static final int image_category_shape=0x7f020007;
-        public static final int landforms=0x7f020008;
-        public static final int manmade=0x7f020009;
-        public static final int nighttime=0x7f02000a;
-        public static final int nighttime2=0x7f02000b;
-        public static final int space1=0x7f02000c;
-        public static final int vpi__tab_indicator=0x7f02000d;
-        public static final int vpi__tab_selected_focused_holo=0x7f02000e;
-        public static final int vpi__tab_selected_holo=0x7f02000f;
-        public static final int vpi__tab_selected_pressed_holo=0x7f020010;
-        public static final int vpi__tab_unselected_focused_holo=0x7f020011;
-        public static final int vpi__tab_unselected_holo=0x7f020012;
-        public static final int vpi__tab_unselected_pressed_holo=0x7f020013;
-        public static final int water=0x7f020014;
-        public static final int weather=0x7f020015;
+        public static final int achievements=0x7f020000;
+        public static final int background=0x7f020001;
+        public static final int card=0x7f020002;
+        public static final int cities=0x7f020003;
+        public static final int cities2=0x7f020004;
+        public static final int description_shape=0x7f020005;
+        public static final int earth=0x7f020006;
+        public static final int get_started=0x7f020007;
+        public static final int ic_launcher=0x7f020008;
+        public static final int image_category_shape=0x7f020009;
+        public static final int landforms=0x7f02000a;
+        public static final int leaderboard=0x7f02000b;
+        public static final int manmade=0x7f02000c;
+        public static final int nighttime=0x7f02000d;
+        public static final int nighttime2=0x7f02000e;
+        public static final int play=0x7f02000f;
+        public static final int settings=0x7f020010;
+        public static final int space1=0x7f020011;
+        public static final int vpi__tab_indicator=0x7f020012;
+        public static final int vpi__tab_selected_focused_holo=0x7f020013;
+        public static final int vpi__tab_selected_holo=0x7f020014;
+        public static final int vpi__tab_selected_pressed_holo=0x7f020015;
+        public static final int vpi__tab_unselected_focused_holo=0x7f020016;
+        public static final int vpi__tab_unselected_holo=0x7f020017;
+        public static final int vpi__tab_unselected_pressed_holo=0x7f020018;
+        public static final int water=0x7f020019;
+        public static final int weather=0x7f02001a;
     }
     public static final class id {
         public static final int achievements=0x7f05000a;
