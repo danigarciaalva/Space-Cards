@@ -41,6 +41,7 @@
 	    android:dividerHeight="5.0sp"
 	    android:layout_below="@id/image_container"
 	    android:layout_margin="10dp"
+	    android:listSelector="@drawable/item_selector"
 	    android:layout_width="match_parent"
 	    android:layout_height="wrap_content"
 	    android:id="@+id/options_question"
