@@ -34,6 +34,13 @@
         <activity android:name="mx.uvdroids.spacecards.Achievements"></activity>
         <activity android:name="mx.uvdroids.spacecards.PlayActivity"></activity>
         <activity android:name="mx.uvdroids.spacecards.Download"></activity>
+        <activity android:name="mx.uvdroids.spacecards.Settings"></activity>
+        <activity android:name="mx.uvdroids.spacecards.Instructions">
+            <intent-filter>
+           		<action android:name=".Instructions" />
+           		<category android:name="android.intent.category.DEFAULT" />
+       		</intent-filter>
+        </activity>
     </application>
 
 </manifest>

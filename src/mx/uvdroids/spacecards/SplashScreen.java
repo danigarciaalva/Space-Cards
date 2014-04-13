@@ -15,7 +15,6 @@ public class SplashScreen extends Activity{
     	getActionBar().hide();
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
-         
         Thread splashTread = new Thread() {
             @Override 
             public void run() {

@@ -8,14 +8,13 @@
         android:scaleType="centerCrop"
         android:contentDescription="@string/content_description"
         android:src="@drawable/background"/>
-
-    <RelativeLayout
-    android:layout_width="wrap_content"
+	<RelativeLayout
+    android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:paddingTop="20dp"
-    android:scaleX="0.7"
-    android:scaleY="0.6"
-    android:rotation="-25">
+    android:scaleX="0.8"
+    android:scaleY="0.8"
+    android:rotation="10">
 
     <ImageView android:id="@+id/part1"
         android:contentDescription="@string/content_description"
@@ -44,8 +43,8 @@
         android:contentDescription="@string/content_description"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_toRightOf="@+id/part2"
-        android:layout_below="@+id/part1"
+        android:layout_toRightOf="@+id/part1"
+        
         android:layout_centerHorizontal="true"
         android:src="@drawable/parte4" />
      
@@ -53,8 +52,8 @@
         android:contentDescription="@string/content_description"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_toLeftOf="@+id/part2"
-        android:layout_below="@+id/part1"
+        android:layout_toLeftOf="@+id/part1"
+        
         android:layout_centerHorizontal="true"
         android:src="@drawable/parte5" />
 

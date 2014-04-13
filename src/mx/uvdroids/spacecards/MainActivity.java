@@ -10,7 +10,7 @@ import android.widget.Button;
 
 public class MainActivity extends Activity implements OnClickListener{
 
-	private Button play;
+	private Button play, settings;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -18,6 +18,8 @@ public class MainActivity extends Activity implements OnClickListener{
 		getActionBar().hide();
 		play = (Button)findViewById(R.id.play);
 		play.setOnClickListener(this);
+		settings = (Button)findViewById(R.id.settings);
+		settings.setOnClickListener(this);
 	}
 
 	@Override
@@ -38,6 +40,9 @@ public class MainActivity extends Activity implements OnClickListener{
 			break;
 		case R.id.achievements:
 			i = new Intent(this, Achievements.class);
+			break;
+		case R.id.settings:
+			i = new Intent(this, Settings.class);
 			break;
 		default:
 			break;

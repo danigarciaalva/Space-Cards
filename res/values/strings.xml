@@ -17,6 +17,8 @@
 	<string name="correct">Correct!</string>
 	<string name="wrong">Wrong!</string>
 	<string name="next">Next</string>
+	<string name="resume">Resume</string>
+	<string name="back">Back to menu</string>
     <string-array name="tutorial_texts">
         <item>Lorem ipsum</item>
         <item>Lorem ipsum</item>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    <PreferenceCategory android:title="Game settings">
+        <CheckBoxPreference
+            android:key="music"
+            android:title="Music"
+            android:summary="Turn on/off the music of Spaceapps" />
+        <CheckBoxPreference
+            android:key="sound"
+            android:title="Sound"
+            android:summary="Turn on/off the sounds of Spaceapps"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="About">
+        <Preference 
+            android:key="instructions"
+            android:title="Instructions"
+            android:summary="Read the detailed instructions">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:targetPackage="mx.uvdroids.spacecards"
+                android:targetClass="mx.uvdroids.spacecards.Instructions"/>
+        </Preference>
+    </PreferenceCategory>
+</PreferenceScreen>

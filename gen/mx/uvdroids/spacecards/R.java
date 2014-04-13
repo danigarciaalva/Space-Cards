@@ -9,12 +9,12 @@ package mx.uvdroids.spacecards;
 
 public final class R {
     public static final class array {
-        public static final int descriptions_categories=0x7f0c0002;
-        public static final int dummy_answers=0x7f0c0005;
-        public static final int images_categories=0x7f0c0003;
-        public static final int level_options=0x7f0c0004;
-        public static final int titles_categories=0x7f0c0001;
-        public static final int tutorial_texts=0x7f0c0000;
+        public static final int descriptions_categories=0x7f0d0002;
+        public static final int dummy_answers=0x7f0d0005;
+        public static final int images_categories=0x7f0d0003;
+        public static final int level_options=0x7f0d0004;
+        public static final int titles_categories=0x7f0d0001;
+        public static final int tutorial_texts=0x7f0d0000;
     }
     public static final class attr {
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
@@ -305,32 +305,32 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int vpiUnderlinePageIndicatorStyle=0x7f010005;
     }
     public static final class bool {
-        public static final int default_circle_indicator_centered=0x7f070000;
-        public static final int default_circle_indicator_snap=0x7f070001;
-        public static final int default_line_indicator_centered=0x7f070002;
-        public static final int default_title_indicator_selected_bold=0x7f070003;
-        public static final int default_underline_indicator_fades=0x7f070004;
+        public static final int default_circle_indicator_centered=0x7f080000;
+        public static final int default_circle_indicator_snap=0x7f080001;
+        public static final int default_line_indicator_centered=0x7f080002;
+        public static final int default_title_indicator_selected_bold=0x7f080003;
+        public static final int default_underline_indicator_fades=0x7f080004;
     }
     public static final class color {
-        public static final int default_circle_indicator_fill_color=0x7f060008;
-        public static final int default_circle_indicator_page_color=0x7f060009;
-        public static final int default_circle_indicator_stroke_color=0x7f06000a;
-        public static final int default_line_indicator_selected_color=0x7f06000b;
-        public static final int default_line_indicator_unselected_color=0x7f06000c;
-        public static final int default_title_indicator_footer_color=0x7f06000d;
-        public static final int default_title_indicator_selected_color=0x7f06000e;
-        public static final int default_title_indicator_text_color=0x7f06000f;
-        public static final int default_underline_indicator_selected_color=0x7f060010;
-        public static final int vpi__background_holo_dark=0x7f060000;
-        public static final int vpi__background_holo_light=0x7f060001;
-        public static final int vpi__bright_foreground_disabled_holo_dark=0x7f060004;
-        public static final int vpi__bright_foreground_disabled_holo_light=0x7f060005;
-        public static final int vpi__bright_foreground_holo_dark=0x7f060002;
-        public static final int vpi__bright_foreground_holo_light=0x7f060003;
-        public static final int vpi__bright_foreground_inverse_holo_dark=0x7f060006;
-        public static final int vpi__bright_foreground_inverse_holo_light=0x7f060007;
-        public static final int vpi__dark_theme=0x7f060011;
-        public static final int vpi__light_theme=0x7f060012;
+        public static final int default_circle_indicator_fill_color=0x7f070008;
+        public static final int default_circle_indicator_page_color=0x7f070009;
+        public static final int default_circle_indicator_stroke_color=0x7f07000a;
+        public static final int default_line_indicator_selected_color=0x7f07000b;
+        public static final int default_line_indicator_unselected_color=0x7f07000c;
+        public static final int default_title_indicator_footer_color=0x7f07000d;
+        public static final int default_title_indicator_selected_color=0x7f07000e;
+        public static final int default_title_indicator_text_color=0x7f07000f;
+        public static final int default_underline_indicator_selected_color=0x7f070010;
+        public static final int vpi__background_holo_dark=0x7f070000;
+        public static final int vpi__background_holo_light=0x7f070001;
+        public static final int vpi__bright_foreground_disabled_holo_dark=0x7f070004;
+        public static final int vpi__bright_foreground_disabled_holo_light=0x7f070005;
+        public static final int vpi__bright_foreground_holo_dark=0x7f070002;
+        public static final int vpi__bright_foreground_holo_light=0x7f070003;
+        public static final int vpi__bright_foreground_inverse_holo_dark=0x7f070006;
+        public static final int vpi__bright_foreground_inverse_holo_light=0x7f070007;
+        public static final int vpi__dark_theme=0x7f070011;
+        public static final int vpi__light_theme=0x7f070012;
     }
     public static final class dimen {
         /**  Default screen margins, per the Android Design guidelines. 
@@ -339,21 +339,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
          screen margins) for sw720dp devices (e.g. 10" tablets) in landscape here.
     
          */
-        public static final int activity_horizontal_margin=0x7f09000d;
-        public static final int activity_vertical_margin=0x7f09000e;
-        public static final int default_circle_indicator_radius=0x7f090000;
-        public static final int default_circle_indicator_stroke_width=0x7f090001;
-        public static final int default_line_indicator_gap_width=0x7f090003;
-        public static final int default_line_indicator_line_width=0x7f090002;
-        public static final int default_line_indicator_stroke_width=0x7f090004;
-        public static final int default_title_indicator_clip_padding=0x7f090005;
-        public static final int default_title_indicator_footer_indicator_height=0x7f090007;
-        public static final int default_title_indicator_footer_indicator_underline_padding=0x7f090008;
-        public static final int default_title_indicator_footer_line_height=0x7f090006;
-        public static final int default_title_indicator_footer_padding=0x7f090009;
-        public static final int default_title_indicator_text_size=0x7f09000a;
-        public static final int default_title_indicator_title_padding=0x7f09000b;
-        public static final int default_title_indicator_top_padding=0x7f09000c;
+        public static final int activity_horizontal_margin=0x7f0a000d;
+        public static final int activity_vertical_margin=0x7f0a000e;
+        public static final int default_circle_indicator_radius=0x7f0a0000;
+        public static final int default_circle_indicator_stroke_width=0x7f0a0001;
+        public static final int default_line_indicator_gap_width=0x7f0a0003;
+        public static final int default_line_indicator_line_width=0x7f0a0002;
+        public static final int default_line_indicator_stroke_width=0x7f0a0004;
+        public static final int default_title_indicator_clip_padding=0x7f0a0005;
+        public static final int default_title_indicator_footer_indicator_height=0x7f0a0007;
+        public static final int default_title_indicator_footer_indicator_underline_padding=0x7f0a0008;
+        public static final int default_title_indicator_footer_line_height=0x7f0a0006;
+        public static final int default_title_indicator_footer_padding=0x7f0a0009;
+        public static final int default_title_indicator_text_size=0x7f0a000a;
+        public static final int default_title_indicator_title_padding=0x7f0a000b;
+        public static final int default_title_indicator_top_padding=0x7f0a000c;
     }
     public static final class drawable {
         public static final int achievements=0x7f020000;
@@ -391,52 +391,59 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int weather=0x7f020020;
     }
     public static final class id {
-        public static final int achievements=0x7f05000f;
-        public static final int action_settings=0x7f050026;
-        public static final int bottom=0x7f050003;
-        public static final int categories_list=0x7f050006;
-        public static final int choose_category=0x7f050005;
-        public static final int description_category=0x7f050020;
-        public static final int downloading=0x7f05000c;
-        public static final int downloading_progress=0x7f05000d;
-        public static final int image_category=0x7f05001e;
-        public static final int image_container=0x7f05001a;
-        public static final int image_question=0x7f05001b;
-        public static final int indicator=0x7f050017;
-        public static final int indicatorQuestions=0x7f050012;
-        public static final int leaderboard=0x7f050010;
-        public static final int logo=0x7f050015;
-        public static final int next=0x7f050024;
-        public static final int none=0x7f050000;
-        public static final int options_question=0x7f05001c;
-        public static final int part1=0x7f050007;
-        public static final int part2=0x7f050008;
-        public static final int part3=0x7f050009;
-        public static final int part4=0x7f05000a;
-        public static final int part5=0x7f05000b;
-        public static final int play=0x7f050011;
-        public static final int question=0x7f050019;
-        public static final int score_counter=0x7f050023;
-        public static final int score_screen=0x7f050021;
-        public static final int score_screen_wrong=0x7f050025;
-        public static final int score_text=0x7f050022;
-        public static final int settings=0x7f05000e;
-        public static final int start_button=0x7f050016;
-        public static final int title_category=0x7f05001f;
-        public static final int top=0x7f050004;
-        public static final int triangle=0x7f050001;
-        public static final int tutorial_desc=0x7f05001d;
-        public static final int tutorial_video=0x7f050014;
-        public static final int underline=0x7f050002;
-        public static final int viewPager=0x7f050018;
-        public static final int viewPagerQuestions=0x7f050013;
+        public static final int achievements=0x7f06000f;
+        public static final int action_settings=0x7f06002d;
+        public static final int bottom=0x7f060003;
+        public static final int categories_list=0x7f060006;
+        public static final int choose_category=0x7f060005;
+        public static final int description_category=0x7f060028;
+        public static final int downloading=0x7f06000c;
+        public static final int downloading_progress=0x7f06000d;
+        public static final int exit_game=0x7f060016;
+        public static final int image_category=0x7f060026;
+        public static final int image_container=0x7f060022;
+        public static final int image_question=0x7f060023;
+        public static final int indicator=0x7f06001f;
+        public static final int indicatorQuestions=0x7f060012;
+        public static final int leaderboard=0x7f060010;
+        public static final int logo=0x7f06001d;
+        public static final int next=0x7f06001a;
+        public static final int none=0x7f060000;
+        public static final int options_question=0x7f060024;
+        public static final int part1=0x7f060007;
+        public static final int part2=0x7f060008;
+        public static final int part3=0x7f060009;
+        public static final int part4=0x7f06000a;
+        public static final int part5=0x7f06000b;
+        public static final int play=0x7f060011;
+        public static final int question=0x7f060021;
+        public static final int resume=0x7f060015;
+        public static final int resume_game=0x7f06002a;
+        public static final int score_counter=0x7f060019;
+        public static final int score_screen=0x7f060029;
+        public static final int score_screen_wrong=0x7f06002c;
+        public static final int score_text=0x7f060018;
+        public static final int screen_correct=0x7f060017;
+        public static final int screen_pause=0x7f060014;
+        public static final int screen_wrong=0x7f06001b;
+        public static final int settings=0x7f06000e;
+        public static final int settings_pause=0x7f06002b;
+        public static final int start_button=0x7f06001e;
+        public static final int title_category=0x7f060027;
+        public static final int top=0x7f060004;
+        public static final int triangle=0x7f060001;
+        public static final int tutorial_desc=0x7f060025;
+        public static final int tutorial_video=0x7f06001c;
+        public static final int underline=0x7f060002;
+        public static final int viewPager=0x7f060020;
+        public static final int viewPagerQuestions=0x7f060013;
     }
     public static final class integer {
-        public static final int default_circle_indicator_orientation=0x7f080000;
-        public static final int default_title_indicator_footer_indicator_style=0x7f080001;
-        public static final int default_title_indicator_line_position=0x7f080002;
-        public static final int default_underline_indicator_fade_delay=0x7f080003;
-        public static final int default_underline_indicator_fade_length=0x7f080004;
+        public static final int default_circle_indicator_orientation=0x7f090000;
+        public static final int default_title_indicator_footer_indicator_style=0x7f090001;
+        public static final int default_title_indicator_line_position=0x7f090002;
+        public static final int default_underline_indicator_fade_delay=0x7f090003;
+        public static final int default_underline_indicator_fade_length=0x7f090004;
     }
     public static final class layout {
         public static final int activity_achievements=0x7f030000;
@@ -451,31 +458,34 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int fragment_tutorial=0x7f030009;
         public static final int item_category=0x7f03000a;
         public static final int screen_correct=0x7f03000b;
-        public static final int screen_wrong=0x7f03000c;
+        public static final int screen_pause=0x7f03000c;
+        public static final int screen_wrong=0x7f03000d;
     }
     public static final class menu {
-        public static final int main=0x7f0d0000;
+        public static final int main=0x7f0e0000;
     }
     public static final class raw {
-        public static final int video=0x7f040000;
+        public static final int video=0x7f050000;
     }
     public static final class string {
-        public static final int achievements=0x7f0b0005;
-        public static final int action_settings=0x7f0b0001;
-        public static final int app_name=0x7f0b0000;
-        public static final int choose=0x7f0b0009;
-        public static final int choose_level=0x7f0b000a;
-        public static final int content_description=0x7f0b0008;
-        public static final int correct=0x7f0b000d;
-        public static final int get_started=0x7f0b0007;
-        public static final int hello_world=0x7f0b0002;
-        public static final int leaderboard=0x7f0b0004;
-        public static final int loading_questions=0x7f0b000b;
-        public static final int next=0x7f0b000f;
-        public static final int play=0x7f0b0006;
-        public static final int score_text=0x7f0b000c;
-        public static final int settings=0x7f0b0003;
-        public static final int wrong=0x7f0b000e;
+        public static final int achievements=0x7f0c0005;
+        public static final int action_settings=0x7f0c0001;
+        public static final int app_name=0x7f0c0000;
+        public static final int back=0x7f0c0011;
+        public static final int choose=0x7f0c0009;
+        public static final int choose_level=0x7f0c000a;
+        public static final int content_description=0x7f0c0008;
+        public static final int correct=0x7f0c000d;
+        public static final int get_started=0x7f0c0007;
+        public static final int hello_world=0x7f0c0002;
+        public static final int leaderboard=0x7f0c0004;
+        public static final int loading_questions=0x7f0c000b;
+        public static final int next=0x7f0c000f;
+        public static final int play=0x7f0c0006;
+        public static final int resume=0x7f0c0010;
+        public static final int score_text=0x7f0c000c;
+        public static final int settings=0x7f0c0003;
+        public static final int wrong=0x7f0c000e;
     }
     public static final class style {
         /** 
@@ -499,16 +509,19 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
     
  API 14 theme customizations can go here. 
          */
-        public static final int AppBaseTheme=0x7f0a0005;
+        public static final int AppBaseTheme=0x7f0b0005;
         /**  Application theme. 
  All customizations that are NOT specific to a particular API-level can go here. 
          */
-        public static final int AppTheme=0x7f0a0006;
-        public static final int TextAppearance_TabPageIndicator=0x7f0a0003;
-        public static final int Theme_PageIndicatorDefaults=0x7f0a0000;
-        public static final int Widget=0x7f0a0001;
-        public static final int Widget_IconPageIndicator=0x7f0a0004;
-        public static final int Widget_TabPageIndicator=0x7f0a0002;
+        public static final int AppTheme=0x7f0b0006;
+        public static final int TextAppearance_TabPageIndicator=0x7f0b0003;
+        public static final int Theme_PageIndicatorDefaults=0x7f0b0000;
+        public static final int Widget=0x7f0b0001;
+        public static final int Widget_IconPageIndicator=0x7f0b0004;
+        public static final int Widget_TabPageIndicator=0x7f0b0002;
+    }
+    public static final class xml {
+        public static final int activity_settings=0x7f040000;
     }
     public static final class styleable {
         /** Attributes that can be used with a CirclePageIndicator.
