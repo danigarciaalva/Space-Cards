@@ -5,6 +5,8 @@ import java.util.Date;
 
 import mx.uvdroids.spacecards.model.SQLiteScoreHelper;
 import mx.uvdroids.spacecards.model.ScorePOJO;
+import mx.uvdroids.spacecards.utils.Connection;
+import mx.uvdroids.spacecards.utils.Server;
 import android.accounts.Account;
 import android.accounts.AccountManager;
 import android.annotation.SuppressLint;
@@ -56,6 +58,9 @@ public class Score extends FragmentActivity implements OnClickListener{
 			s.name = "Unknown";
 		SQLiteScoreHelper.insert(s, this);
 		CheckAchievements.check(this);
+		if(Connection.checkInternetConnection(this)){
+			Server.sendScore(score, s.name);
+		}
 	}
 	@Override
 	public void onClick(View v) {

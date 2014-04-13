@@ -23,6 +23,8 @@
 	<string name="share">Share</string>
 	<string name="highscores">Highscores</string>
 	<string name="correct_answer">The correct answer is:</string>
+	<string name="you_have_unlocked">You have unlocked</string>
+	
     <string-array name="tutorial_texts">
         <item>Lorem ipsum</item>
         <item>Lorem ipsum</item>

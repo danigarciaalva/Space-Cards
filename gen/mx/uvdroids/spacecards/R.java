@@ -513,43 +513,43 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
     public static final class id {
         public static final int achievements=0x7f070014;
         public static final int achievements_list=0x7f070008;
-        public static final int action_settings=0x7f070042;
+        public static final int action_settings=0x7f070043;
         public static final int back_to_main_menu=0x7f070029;
         public static final int bottom=0x7f070003;
         public static final int card_score=0x7f070023;
         public static final int categories_list=0x7f07000a;
         public static final int choose_category=0x7f070009;
         public static final int content=0x7f070012;
-        public static final int description_achievement=0x7f07003b;
-        public static final int description_category=0x7f07003e;
+        public static final int description_achievement=0x7f07003c;
+        public static final int description_category=0x7f07003f;
         public static final int downloading=0x7f070010;
         public static final int downloading_progress=0x7f070011;
         public static final int exit_game=0x7f07001c;
-        public static final int image_achievement=0x7f070039;
-        public static final int image_category=0x7f07003c;
-        public static final int image_container=0x7f070034;
-        public static final int image_question=0x7f070035;
-        public static final int indicator=0x7f07002f;
+        public static final int image_achievement=0x7f07003a;
+        public static final int image_category=0x7f07003d;
+        public static final int image_container=0x7f070035;
+        public static final int image_question=0x7f070036;
+        public static final int indicator=0x7f070030;
         public static final int indicatorQuestions=0x7f070017;
-        public static final int item_answer=0x7f070040;
+        public static final int item_answer=0x7f070041;
         public static final int leaderboard=0x7f070015;
-        public static final int leaderboard_local_list=0x7f070041;
-        public static final int leaderboard_name=0x7f07003f;
+        public static final int leaderboard_local_list=0x7f070042;
+        public static final int leaderboard_name=0x7f070040;
         public static final int leaderboard_score=0x7f07002b;
-        public static final int logo=0x7f07002d;
-        public static final int menu_item_share=0x7f070043;
-        public static final int name_achievement=0x7f07003a;
+        public static final int logo=0x7f07002e;
+        public static final int menu_item_share=0x7f070044;
+        public static final int name_achievement=0x7f07003b;
         public static final int next=0x7f070020;
         public static final int none=0x7f070000;
-        public static final int options_question=0x7f070036;
-        public static final int pager=0x7f070032;
+        public static final int options_question=0x7f070037;
+        public static final int pager=0x7f070033;
         public static final int part1=0x7f07000b;
         public static final int part2=0x7f07000c;
         public static final int part3=0x7f07000d;
         public static final int part4=0x7f07000e;
         public static final int part5=0x7f07000f;
         public static final int play=0x7f070016;
-        public static final int question=0x7f070033;
+        public static final int question=0x7f070034;
         public static final int replay=0x7f070028;
         public static final int resume=0x7f07001a;
         public static final int score_best_score=0x7f070026;
@@ -565,20 +565,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int settings_pause=0x7f07001b;
         public static final int spaceapps_about=0x7f070007;
         public static final int spacecads_about=0x7f070005;
-        public static final int start_button=0x7f07002e;
-        public static final int tabs=0x7f070031;
+        public static final int start_button=0x7f07002f;
+        public static final int tabs=0x7f070032;
         public static final int text_highscore=0x7f07002a;
-        public static final int title_category=0x7f07003d;
+        public static final int title_category=0x7f07003e;
         public static final int top=0x7f070004;
         public static final int triangle=0x7f070001;
-        public static final int tutorial_desc=0x7f070037;
-        public static final int tutorial_video=0x7f07002c;
+        public static final int tutorial_desc=0x7f070038;
+        public static final int tutorial_video=0x7f07002d;
         public static final int underline=0x7f070002;
+        public static final int unlocked_amount=0x7f07002c;
         public static final int uvdroids_about=0x7f070006;
         public static final int viewCenter=0x7f070027;
-        public static final int viewPager=0x7f070030;
+        public static final int viewPager=0x7f070031;
         public static final int viewPagerQuestions=0x7f070018;
-        public static final int view_item_achievement=0x7f070038;
+        public static final int view_item_achievement=0x7f070039;
     }
     public static final class integer {
         public static final int default_circle_indicator_orientation=0x7f090000;
@@ -597,15 +598,16 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int activity_play=0x7f030006;
         public static final int activity_score=0x7f030007;
         public static final int activity_splash=0x7f030008;
-        public static final int activity_walktrought=0x7f030009;
-        public static final int fragment_leaderboard=0x7f03000a;
-        public static final int fragment_question=0x7f03000b;
-        public static final int fragment_tutorial=0x7f03000c;
-        public static final int item_achievement=0x7f03000d;
-        public static final int item_category=0x7f03000e;
-        public static final int item_leaderboard=0x7f03000f;
-        public static final int item_question=0x7f030010;
-        public static final int leaderboard_local=0x7f030011;
+        public static final int activity_unlocked=0x7f030009;
+        public static final int activity_walktrought=0x7f03000a;
+        public static final int fragment_leaderboard=0x7f03000b;
+        public static final int fragment_question=0x7f03000c;
+        public static final int fragment_tutorial=0x7f03000d;
+        public static final int item_achievement=0x7f03000e;
+        public static final int item_category=0x7f03000f;
+        public static final int item_leaderboard=0x7f030010;
+        public static final int item_question=0x7f030011;
+        public static final int leaderboard_local=0x7f030012;
     }
     public static final class menu {
         public static final int main=0x7f0e0000;
@@ -637,6 +639,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int settings=0x7f0c0003;
         public static final int share=0x7f0c0013;
         public static final int wrong=0x7f0c000e;
+        public static final int you_have_unlocked=0x7f0c0016;
     }
     public static final class style {
         /** 
