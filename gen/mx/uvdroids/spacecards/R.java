@@ -392,21 +392,23 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
     }
     public static final class id {
         public static final int achievements=0x7f05000f;
-        public static final int action_settings=0x7f050020;
+        public static final int action_settings=0x7f050026;
         public static final int bottom=0x7f050003;
         public static final int categories_list=0x7f050006;
         public static final int choose_category=0x7f050005;
-        public static final int description_category=0x7f05001f;
+        public static final int description_category=0x7f050020;
         public static final int downloading=0x7f05000c;
         public static final int downloading_progress=0x7f05000d;
-        public static final int image_category=0x7f05001d;
-        public static final int image_question=0x7f05001a;
+        public static final int image_category=0x7f05001e;
+        public static final int image_container=0x7f05001a;
+        public static final int image_question=0x7f05001b;
         public static final int indicator=0x7f050017;
         public static final int indicatorQuestions=0x7f050012;
         public static final int leaderboard=0x7f050010;
         public static final int logo=0x7f050015;
+        public static final int next=0x7f050024;
         public static final int none=0x7f050000;
-        public static final int options_question=0x7f05001b;
+        public static final int options_question=0x7f05001c;
         public static final int part1=0x7f050007;
         public static final int part2=0x7f050008;
         public static final int part3=0x7f050009;
@@ -414,12 +416,16 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int part5=0x7f05000b;
         public static final int play=0x7f050011;
         public static final int question=0x7f050019;
+        public static final int score_counter=0x7f050023;
+        public static final int score_screen=0x7f050021;
+        public static final int score_screen_wrong=0x7f050025;
+        public static final int score_text=0x7f050022;
         public static final int settings=0x7f05000e;
         public static final int start_button=0x7f050016;
-        public static final int title_category=0x7f05001e;
+        public static final int title_category=0x7f05001f;
         public static final int top=0x7f050004;
         public static final int triangle=0x7f050001;
-        public static final int tutorial_desc=0x7f05001c;
+        public static final int tutorial_desc=0x7f05001d;
         public static final int tutorial_video=0x7f050014;
         public static final int underline=0x7f050002;
         public static final int viewPager=0x7f050018;
@@ -444,6 +450,8 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int fragment_question=0x7f030008;
         public static final int fragment_tutorial=0x7f030009;
         public static final int item_category=0x7f03000a;
+        public static final int screen_correct=0x7f03000b;
+        public static final int screen_wrong=0x7f03000c;
     }
     public static final class menu {
         public static final int main=0x7f0d0000;
@@ -458,12 +466,16 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int choose=0x7f0b0009;
         public static final int choose_level=0x7f0b000a;
         public static final int content_description=0x7f0b0008;
+        public static final int correct=0x7f0b000d;
         public static final int get_started=0x7f0b0007;
         public static final int hello_world=0x7f0b0002;
         public static final int leaderboard=0x7f0b0004;
         public static final int loading_questions=0x7f0b000b;
+        public static final int next=0x7f0b000f;
         public static final int play=0x7f0b0006;
+        public static final int score_text=0x7f0b000c;
         public static final int settings=0x7f0b0003;
+        public static final int wrong=0x7f0b000e;
     }
     public static final class style {
         /** 

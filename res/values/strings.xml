@@ -13,6 +13,10 @@
 	<string name="choose">Choose a category</string>
 	<string name="choose_level">Choose a level</string>
 	<string name="loading_questions">Loading questions</string>
+	<string name="score_text">Score</string>
+	<string name="correct">Correct!</string>
+	<string name="wrong">Wrong!</string>
+	<string name="next">Next</string>
     <string-array name="tutorial_texts">
         <item>Lorem ipsum</item>
         <item>Lorem ipsum</item>
