@@ -19,7 +19,7 @@
         android:textStyle="bold"
         android:gravity="center"
         android:id="@+id/choose_category"
-        android:textColor="#FFFFFF"
+        android:textColor="#e25e03"
         android:text="@string/choose"/>
 	<ListView 
 	    android:layout_width="match_parent"
