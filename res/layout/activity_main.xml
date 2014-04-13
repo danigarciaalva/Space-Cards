@@ -16,10 +16,12 @@
         android:layout_marginRight="40dp"
         android:layout_marginLeft="40dp"
         android:text="@string/settings"
+        android:textColor="#6c6a6a"
         android:gravity="center"
         android:padding="10dp"
         android:layout_alignParentBottom="true"
-        android:id="@+id/settings"/>
+        android:id="@+id/settings"
+        android:background="@drawable/settings"/>
 
     <Button 
         android:layout_width="match_parent"
@@ -28,10 +30,12 @@
         android:layout_marginLeft="40dp"
         android:layout_marginBottom="10dp"
         android:text="@string/achievements"
+        android:textColor="#fca252"
         android:gravity="center"
         android:padding="10dp"
         android:layout_above="@id/settings"
-        android:id="@+id/achievements"/>
+        android:id="@+id/achievements"
+        android:background="@drawable/achievements"/>
     
     <Button 
         android:layout_width="match_parent"
@@ -40,10 +44,12 @@
         android:layout_marginLeft="40dp"
         android:layout_marginBottom="10dp"
         android:text="@string/leaderboard"
+        android:textColor="#439b46"
         android:gravity="center"
         android:padding="10dp"
         android:layout_above="@id/achievements"
-        android:id="@+id/leaderboard"/>
+        android:id="@+id/leaderboard"
+        android:background="@drawable/leaderboard"/>
     
     <Button 
         android:layout_width="match_parent"
@@ -55,5 +61,7 @@
         android:gravity="center"
         android:padding="10dp"
         android:layout_above="@id/leaderboard"
-        android:id="@+id/play"/>
+        android:id="@+id/play"
+        android:textColor="#91c6ee"
+        android:background="@drawable/play"/>
 </RelativeLayout>
