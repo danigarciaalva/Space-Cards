@@ -18,6 +18,7 @@ import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.view.View.OnClickListener;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -77,7 +78,7 @@ public class PlayActivity extends Activity  implements OnItemClickListener, OnCl
 	    		TextView title = (TextView)v.findViewById(R.id.question);
 	    		ListView answers = (ListView)v.findViewById(R.id.options_question);
 	    		title.setText(q.question);
-	    		answers.setAdapter(new ArrayAdapter<String>(context, android.R.layout.simple_list_item_1, q.posible_answers));
+	    		answers.setAdapter(new AnswersAdapter(context,R.layout.item_question, q.posible_answers));
 	    		answers.setOnItemClickListener(PlayActivity.this);
 	    		String[] name = q.image.split("/");
 		        String realname = name[name.length-1];
@@ -205,5 +206,31 @@ public class PlayActivity extends Activity  implements OnItemClickListener, OnCl
 		default:
 			break;
 		}
+	}
+	
+	class AnswersAdapter extends ArrayAdapter<String>{
+
+		private ArrayList<String> answers;
+		public AnswersAdapter(Context context, int resource, ArrayList<String> objects) {
+			super(context, resource, objects);
+			this.answers = objects;
+		}
+		
+		@Override
+		public int getCount() {
+			return this.answers.size();
+		}
+		
+		@Override
+		public View getView(int position, View v, ViewGroup parent) {
+			if(v == null){
+				LayoutInflater inflater = (LayoutInflater)getContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+				v = inflater.inflate(R.layout.item_question, null);
+			}
+			TextView answer = (TextView)v.findViewById(R.id.item_answer);
+			answer.setText(getItem(position));
+			return v;
+		}
+		
 	}
 }

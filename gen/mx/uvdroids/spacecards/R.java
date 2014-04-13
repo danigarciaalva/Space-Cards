@@ -515,7 +515,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
     public static final class id {
         public static final int achievements=0x7f070011;
         public static final int achievements_list=0x7f070005;
-        public static final int action_settings=0x7f07003e;
+        public static final int action_settings=0x7f07003f;
         public static final int back_to_main_menu=0x7f070026;
         public static final int bottom=0x7f070003;
         public static final int card_score=0x7f070020;
@@ -533,12 +533,13 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int image_question=0x7f070032;
         public static final int indicator=0x7f07002c;
         public static final int indicatorQuestions=0x7f070014;
+        public static final int item_answer=0x7f07003d;
         public static final int leaderboard=0x7f070012;
-        public static final int leaderboard_local_list=0x7f07003d;
+        public static final int leaderboard_local_list=0x7f07003e;
         public static final int leaderboard_name=0x7f07003c;
         public static final int leaderboard_score=0x7f070028;
         public static final int logo=0x7f07002a;
-        public static final int menu_item_share=0x7f07003f;
+        public static final int menu_item_share=0x7f070040;
         public static final int name_achievement=0x7f070037;
         public static final int next=0x7f07001d;
         public static final int none=0x7f070000;
@@ -601,7 +602,8 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int item_achievement=0x7f03000c;
         public static final int item_category=0x7f03000d;
         public static final int item_leaderboard=0x7f03000e;
-        public static final int leaderboard_local=0x7f03000f;
+        public static final int item_question=0x7f03000f;
+        public static final int leaderboard_local=0x7f030010;
     }
     public static final class menu {
         public static final int main=0x7f0e0000;

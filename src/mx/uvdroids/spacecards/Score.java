@@ -55,6 +55,7 @@ public class Score extends FragmentActivity implements OnClickListener{
 		else
 			s.name = "Unknown";
 		SQLiteScoreHelper.insert(s, this);
+		CheckAchievements.check(this);
 	}
 	@Override
 	public void onClick(View v) {

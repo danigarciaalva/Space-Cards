@@ -37,7 +37,6 @@
 	        android:contentDescription="@string/content_description"/>
     </LinearLayout>
 	<ListView 
-	    android:background="@drawable/card"
 	    android:divider="@android:color/transparent"
 	    android:dividerHeight="5.0sp"
 	    android:layout_below="@id/image_container"
